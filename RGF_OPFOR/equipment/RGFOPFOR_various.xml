@@ -1,5 +1,5 @@
-<equipment>
-    <Helmet name="hat_VKBO" inventoryBinding="Helmet"  unlockCost="0"
+<Equipment>
+    <Helmet name="hat_VKBO_OPFOR" inventoryBinding="Helmet"  unlockCost="0"
 			tooltip="VKBO Field Cap"
 			img="data/models/humans/attachments/VKBO_cap_ui.tga"
 		>
@@ -7,11 +7,11 @@
 		<ConcealmentModifier add="0" />
         <RenderObject3D model="data/models/humans/attachments/VKBO_cap.khm" diffuseTex="data/models/humans/attachments/VKBO_cap.dds" attachSlot="Bip001 Head"/>
 		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
-			<ProtectionArc degrees="360" coveragePercent="1" piercingProtectionLevel="1"/>
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="1"/>
 		</Params>
 	</Helmet>
 
-    <Armor name="armor_6B45" inventoryBinding="Armor" unlockCost="0"
+    <Armor name="armor_6B45_OPFOR" inventoryBinding="Armor" unlockCost="0"
 			tooltip="6B45 Body Armor"
 			img="data/models/equipment/armor_6B45_ui.dds"
 		>
@@ -24,4 +24,4 @@
 		</Params>
 	</Armor>
 
-</equipment>
+</Equipment>
