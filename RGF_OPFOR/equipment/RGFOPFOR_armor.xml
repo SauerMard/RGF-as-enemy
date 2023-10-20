@@ -1,0 +1,27 @@
+<equipment>
+    <Helmet name="hat_VKBO" inventoryBinding="Helmet"  unlockCost="0"
+			tooltip="VKBO Field Cap"
+			img="data/models/humans/attachments/VKBO_cap_ui.tga"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="0" />
+        <RenderObject3D model="data/models/humans/attachments/VKBO_cap.khm" diffuseTex="data/models/humans/attachments/VKBO_cap.dds" attachSlot="Bip001 Head"/>
+		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
+			<ProtectionArc degrees="360" coveragePercent="1" piercingProtectionLevel="1"/>
+		</Params>
+	</Helmet>
+
+    <Armor name="armor_6B45" inventoryBinding="Armor" unlockCost="0"
+			tooltip="6B45 Body Armor"
+			img="data/models/equipment/armor_6B45_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-1"/>
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="90" coveragePercent="45" piercingProtectionLevel="5"/>
+			<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="4"/>
+			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+		</Params>
+	</Armor>
+
+</equipment>

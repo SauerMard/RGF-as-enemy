@@ -3,6 +3,7 @@
     <Entity name="Grunt Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
         <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/VKBO_cap.khm" diffuseTex="data/models/humans/attachments/VKBO_cap.dds" attachSlot="Bip001 Head"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
         <Human type="BadGuy">
@@ -17,8 +18,9 @@
             </Mobility>
 
             <Equipment>
-                <Item name="AKM_RGFOPFOR"/>
+                <Item name="AKM_RGF_OPFOR"/>
                 <Item name="hat_VKBO"/>
+                <Item name="armor_6B45"/>
             </Equipment>
         </Human>
     </Entity>

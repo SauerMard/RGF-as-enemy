@@ -2,12 +2,11 @@
 
 <!-- Assault Rifles -->
 
-<Bind eqp="AKM_RGFOPFOR">
+<Bind eqp="AKM_RGF_OPFOR">
   <to name="762x39_FMJ_231_RGF"/>
 </Bind>
-<Firearm name="AKM_RGF" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
+<Firearm name="AKM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle"
     tooltip="AKM Rifle"
-    description="@firearm_AKMRGF_desc"
     img="data/models/weapons/akm_ui.dds"
     animationSet="rifle"
   >
