@@ -16,4 +16,36 @@
   </Params>
 </Ammo>
 
+<Ammo name="545x39_FMJ_7N10_RGF"
+    tooltip="7N10 55gr FMJ"
+    description="@ammo_545x39_FMJ_7N10_RGF_desc"
+    img="data/models/weapons/attachments/m855_ammo_ui.dds">
+
+  <Params roundsPerSecond="10"
+      audibleSoundRadius="100"
+      physicsImpactForce="1.5"
+      damageType="0"
+      silenced="0">
+    <Damage start="24" end="21" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="30" end="15" startDist="0" endDist="50"/>
+    <ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="545x39_FMJ_7N10_SB_RGF"
+    tooltip="7N10 55gr FMJ"
+    description="@ammo_545x39_FMJ_7N10_RGF_desc"
+    img="data/models/weapons/attachments/m855_ammo_ui.dds">
+
+  <Params roundsPerSecond="12"
+      audibleSoundRadius="100"
+      physicsImpactForce="1.5"
+      damageType="0"
+      silenced="0">
+    <Damage start="22" end="19" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="28" end="15" startDist="0" endDist="20"/>
+    <ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
 </Equipment>
