@@ -2,7 +2,7 @@
 
 <!-- Assault Rifles -->
 
-<Bind eqp="AKM_RGF">
+<Bind eqp="AKM_RGFOPFOR">
   <to name="762x39_FMJ_231_RGF"/>
 </Bind>
 <Firearm name="AKM_RGF" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
