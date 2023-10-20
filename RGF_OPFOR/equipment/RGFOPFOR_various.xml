@@ -1,4 +1,6 @@
 <Equipment>
+
+<!-- Helmets -->
     <Helmet name="hat_VKBO_OPFOR" inventoryBinding="Helmet"  unlockCost="0"
 			tooltip="VKBO Field Cap"
 			img="data/models/humans/attachments/VKBO_cap_ui.tga"
@@ -23,7 +25,7 @@
 			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
 		</Params>
 	</Helmet>
-
+<!-- Armor -->
     <Armor name="armor_6B45_OPFOR" inventoryBinding="Armor" unlockCost="0"
 			tooltip="6B45 Body Armor"
 			img="data/models/equipment/armor_6B45_ui.dds"
@@ -37,4 +39,357 @@
 		</Params>
 	</Armor>
 
+<!-- Sights -->
+
+<Scope name="PSO1M2_RGF_OPFOR" unlockCost="0"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="PSO-1M2 4x"
+			description="@scope_pso1m2RGF_desc"
+			img="data/models/weapons/attachments/pso_1_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/pso1.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/pso1.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-3"/>
+
+    <Params>
+			<EquipmentModifier>
+				<AddTo
+					reloadTime="+100"
+					reloadEmptyTime="+150"
+					readyTime="+40"
+					guardTime="+20"
+					changeInTime="+150"
+					changeOutTime="+100"
+				/>
+			</EquipmentModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-30"
+					maxAimTime2="-110"
+					resetTime="-15"
+					accuracyAdd="+20"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-110"
+					maxAimTime2="-120"
+					resetTime="-40"
+					accuracyAdd="+50"
+					critChanceAdd="+15"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-120"
+					maxAimTime2="+70"
+					resetTime="-50"
+					accuracyAdd="+50"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="70"
+					maxAimTime2="100"
+					resetTime="-50"
+					accuracyAdd="+30"
+					critChanceAdd="+4"
+				/>
+			</AttackTypeModifier>
+
+		</Params>
+</Scope>
+
+<Scope name="PSO39_RGF_OPFOR" unlockCost=""
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_pso39_name"
+			description="@scope_pso39RGF_desc"
+			img="data/models/weapons/attachments/po_3_9_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/po39.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/po39.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="-6"/>
+		<ConcealmentModifier add="-1"/>
+		<Params>
+			<EquipmentModifier>
+				<AddTo
+					reloadTime="+200"
+					reloadEmptyTime="+250"
+					readyTime="+40"
+					guardTime="+30"
+					changeInTime="+180"
+					changeOutTime="+100"
+				/>
+			</EquipmentModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-40"
+					maxAimTime2="-110"
+					resetTime="-20"
+					accuracyAdd="+15"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-110"
+					maxAimTime2="-250"
+					resetTime="-95"
+					accuracyAdd="+75"
+					critChanceAdd="+22"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-250"
+					maxAimTime2="-250"
+					resetTime="-60"
+					accuracyAdd="+100"
+					critChanceAdd="+30"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-250"
+					maxAimTime2="-100"
+					resetTime="-100"
+					accuracyAdd="+100"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+		</Params>
+	</Scope>
+
+<!-- Misc -->
+
+<Bind eqp="RPG7HEAT_RGF_OPFOR">
+		<to name="338_SniperRifle"/>
+	</Bind>
+	<Firearm name="RPG7HEAT_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rpg" unlockCost="0"
+			tooltip="RPG-7 Launcher"
+			description="@firearm_RPG7HEATRGF_desc"
+			img="data/models/weapons/rpg7_ui.dds"
+			animationSet="rpg26"
+			movie="data/movies/rocket_launcher.ogv"
+		>
+
+		<RenderObject3D model="data/models/weapons/rpg7.khm" attachSlot="prop_back_rpg" skipGOSSAO="true" diffuseTex="data/models/weapons/rpg7.dds">
+			<Specular shininess="32" intensity="4.0"/>
+		</RenderObject3D>
+		<MobilityModifiers moveSpeedModifierPercent="-16" turnSpeedModifierPercent="-6"/>
+		<ConcealmentModifier add="-4" />
+		<ModifiableParams
+			projectilesPerMagazine="1"
+
+			reloadTime="6000"
+			reloadEmptyTime="6000"
+			changeInTime="1400"
+			changeOutTime="500"
+			readyTime="600"
+			guardTime="350"
+		/>
+
+		<Params
+			caliberInfoText="93mm HEAT"
+			operationInfoText="@firearm_operation_singleshotthrow_name"
+			ai_rangeMin="12.0"
+			ai_rangeOptimal="20.0"
+			ai_rangeMax="80.0"
+			ai_stopWhenShooting="true"
+		/>
+
+
+		<AttackTypesProjectile>
+			<AttackType name="CIA_RPG_QuickAimClose" rangeMeters="14"/>
+			<AttackType name="CIA_RPG_QuickAim" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge">
+			<Flare particles="RpgLaunch_02" />
+		</MuzzleFlash>
+
+		<Projectile
+			bodyTemplate="Rpg26RocketBody"
+			trailParticles="RpgTrail2"
+			lightTemplate="Rocket Red"
+
+			soundExplosion="rpg_expl"
+			soundVoiceOnLaunch="vox_trpr_01_gear_flash"
+			soundOnSpawn="rpg26_fire"
+			soundFollow="rpg_fly_travel"
+
+			ai_aimForCover="false"
+			ai_launchBlastRadius="3.0"
+
+			minVelocity="2.0"
+			maxVelocity="20.0"
+			acceleration="4.0"
+			mass="0.0"
+			friendlyFire="true"
+			triggerOnImpact="true"
+
+			roundsPerSecond="2.0"
+			accuracyPercent="85"
+			physicsDetonationForce="100"
+			audibleLaunchSoundRadius="15"
+			audibleDetonationSoundRadius="100"
+			>
+
+			<FX
+				particles="RpgExplosion"
+				entity1="ExplosionLight"
+				entity2="Explosion Scorch Mark"
+				entity3="FX_dust_large"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="3">
+				<DamageEffect chancePercent="100" damage="999" damageType="2"/>
+				<SuppressEffect amount="50"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="5">
+				<DamageEffect chancePercent="75" damage="50" damageType="1"/>
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1000" outerRangeTimeMSec="500"/>
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="40"/>
+				<SmokeEffect durationMSec="1900" />
+			</EffectRange>
+
+			<EffectRange radiusMeters="7">
+				<StunEffect chancePercent="50" innerRangeTimeMSec="500" outerRangeTimeMSec="300"/>
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="30"/>
+			</EffectRange>
+		</Projectile>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<!-- <Reload name="rifle_reld"/> -->
+			<!-- <ReloadEmpty name="rifle_reldempt"/> -->
+			<!-- <Fire name="type56_fire"/> -->
+			<!-- <ShellDrop name="rifle_shell_drop"/> -->
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="RPG26_RGF_OPFOR">
+		<to name="338_SniperRifle"/>
+	</Bind>
+	<Firearm name="RPG26_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rpg" unlockCost="2"
+			tooltip="RPG-26 Launcher"
+			description="@firearm_RPG26RGF_desc"
+			img="data/models/weapons/rpg26_ui.dds"
+			animationSet="rpg26"
+			movie="data/movies/rocket_launcher.ogv"
+			discardWithEntityWhenEmpty="DiscardedRpg26"
+		>
+
+		<RenderObject3D model="data/models/weapons/rpg26_trooper.khm" attachSlot="prop_back_rpg" skipGOSSAO="true" diffuseTex="data/models/weapons/rpg26.dds">
+			<Specular shininess="32" intensity="4.0"/>
+		</RenderObject3D>
+		<MobilityModifiers moveSpeedModifierPercent="-8" turnSpeedModifierPercent="-4"/>
+		<ConcealmentModifier add="-4" />
+		<ModifiableParams
+			projectilesPerMagazine="1"
+
+			reloadTime="3000"
+			reloadEmptyTime="3000"
+			changeInTime="1400"
+			changeOutTime="500"
+			readyTime="600"
+			guardTime="350"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_72mmHEAT_name"
+			operationInfoText="@firearm_operation_singleshotthrow_name"
+			ai_rangeMin="12.0"
+			ai_rangeOptimal="20.0"
+			ai_rangeMax="80.0"
+			ai_stopWhenShooting="true"
+		/>
+
+
+		<AttackTypesProjectile>
+			<AttackType name="CIA_RPG_QuickAimClose" rangeMeters="14"/>
+			<AttackType name="CIA_RPG_QuickAim" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge">
+			<Flare particles="RpgLaunch_02" />
+		</MuzzleFlash>
+
+		<Projectile
+			bodyTemplate="Rpg26RocketBody"
+			trailParticles="RpgTrail2"
+			lightTemplate="Rocket Red"
+
+			soundExplosion="rpg_expl"
+			soundVoiceOnLaunch="vox_trpr_01_gear_flash"
+			soundOnSpawn="rpg26_fire"
+			soundFollow="rpg_fly_travel"
+
+			ai_aimForCover="false"
+			ai_launchBlastRadius="3.0"
+
+			minVelocity="2.0"
+			maxVelocity="20.0"
+			acceleration="4.0"
+			mass="0.0"
+			friendlyFire="true"
+			triggerOnImpact="true"
+
+			roundsPerSecond="2.0"
+			accuracyPercent="82"
+			physicsDetonationForce="100"
+			audibleLaunchSoundRadius="15"
+			audibleDetonationSoundRadius="100"
+			>
+
+			<FX
+				particles="RpgExplosion"
+				entity1="ExplosionLight"
+				entity2="Explosion Scorch Mark"
+				entity3="FX_dust_large"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="2">
+				<DamageEffect chancePercent="100" damage="999" damageType="2"/>
+				<SuppressEffect amount="50"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="3">
+				<DamageEffect chancePercent="100" damage="10" damageType="1"/>
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1000" outerRangeTimeMSec="500"/>
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="40"/>
+				<SmokeEffect durationMSec="1900" />
+			</EffectRange>
+
+			<EffectRange radiusMeters="5">
+				<StunEffect chancePercent="50" innerRangeTimeMSec="500" outerRangeTimeMSec="300"/>
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="30"/>
+			</EffectRange>
+		</Projectile>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<!-- <Reload name="rifle_reld"/> -->
+			<!-- <ReloadEmpty name="rifle_reldempt"/> -->
+			<!-- <Fire name="type56_fire"/> -->
+			<!-- <ShellDrop name="rifle_shell_drop"/> -->
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
 </Equipment>
