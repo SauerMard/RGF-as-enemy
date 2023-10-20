@@ -1,0 +1,19 @@
+<Equipment>
+
+<Ammo name="762x39_FMJ_231_RGF"
+    tooltip="57-N-231 122gr FMJ"
+    description="@ammo_762x39_FMJ_231_RGF_desc"
+    img="data/models/weapons/attachments/m855_ammo_ui.dds">
+
+  <Params roundsPerSecond="10"
+      audibleSoundRadius="100"
+      physicsImpactForce="1.5"
+      damageType="0"
+      silenced="0">
+    <Damage start="23" end="19" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="20" end="15" startDist="0" endDist="40"/>
+    <ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+</Equipment>

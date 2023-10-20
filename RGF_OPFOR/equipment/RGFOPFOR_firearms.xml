@@ -1,0 +1,73 @@
+<Equipment>
+
+<!-- Assault Rifles -->
+
+<Bind eqp="AKM_RGF">
+  <to name="762x39_FMJ_231_RGF"/>
+</Bind>
+<Firearm name="AKM_RGF" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
+    tooltip="AKM Rifle"
+    description="@firearm_AKMRGF_desc"
+    img="data/models/weapons/akm_ui.dds"
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-1"/>
+  <RenderObject3D model="data/models/weapons/RGFakm.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/akm.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2300"
+    reloadEmptyTime="3500"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="450"
+    guardTime="200"
+
+    accuracyStart="180"
+    accuracyEnd="120"
+    accuracyStartDist="0"
+    accuracyEndDist="100"
+
+    suppressionScale="1.09"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_762x39_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="type56_mag"
+    suppressedSwitch="AKM_RGFsup"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="15.0"
+    ai_rangeMax="45.0"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="8"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="14"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="40"/>
+    <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="type56_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+</Equipment>
