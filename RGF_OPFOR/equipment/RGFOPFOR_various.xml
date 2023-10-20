@@ -11,6 +11,19 @@
 		</Params>
 	</Helmet>
 
+	<Helmet name="helmet_6B27_OPFOR" inventoryBinding="Helmet" unlockCost="0"
+			tooltip="6B27 Helmet"
+			description="@helmet_6B27_desc"
+			img="data/models/humans/attachments/6B27_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="0" />
+    <RenderObject3D model="data/models/humans/attachments/6B27.khm" diffuseTex="data/models/humans/attachments/6B27.dds" attachSlot="Bip001 Head"/>
+		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
+			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
+		</Params>
+	</Helmet>
+
     <Armor name="armor_6B45_OPFOR" inventoryBinding="Armor" unlockCost="0"
 			tooltip="6B45 Body Armor"
 			img="data/models/equipment/armor_6B45_ui.dds"

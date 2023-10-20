@@ -1,1 +1,2 @@
 @opfor_rifleman=Rifleman
+@opfor_pistol=Junior Rifleman
