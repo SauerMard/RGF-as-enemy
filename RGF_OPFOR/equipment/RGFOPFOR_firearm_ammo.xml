@@ -96,4 +96,20 @@
   </Params>
 </Ammo>
 
+<Ammo name="762R57N323_PKMRGF"
+    tooltip="57-N-323 148gr FMJ"
+    description="@ammo_762R57N323RGF_desc"
+    img="data/models/weapons/attachments/m80_ammo_ui.dds">
+
+  <Params	roundsPerSecond="10"
+      audibleSoundRadius="100"
+      physicsImpactForce="8.0"
+      damageType="0"
+      silenced="0">
+    <Damage start="30" end="29" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="15" end="14" startDist="20" endDist="30"/>
+    <ArmorPenetration start="5" end="4" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
 </Equipment>
