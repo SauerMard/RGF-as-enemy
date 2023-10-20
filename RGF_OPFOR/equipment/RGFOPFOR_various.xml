@@ -26,7 +26,7 @@
 		</Params>
 	</Helmet>
 <!-- Armor -->
-    <Armor name="armor_6B45_OPFOR" inventoryBinding="Armor" unlockCost="0"
+    <Armor name="armor_6B45_OPFOR" inventoryBinding="Armor" unlockCost="0" 
 			tooltip="6B45 Body Armor"
 			img="data/models/equipment/armor_6B45_ui.dds"
 		>
@@ -38,7 +38,36 @@
 			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
 		</Params>
 	</Armor>
+<!-- Regular ^ -->
+	<Armor name="armor_6B43_OPFOR" inventoryBinding="Armor" unlockCost="6"
+			tooltip="6B43 Body Armor"
+			description="@armor_6B43_desc"
+			img="data/models/equipment/armor_6B43_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-24" turnSpeedModifierPercent="-12"/>
 
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="90" coveragePercent="65" piercingProtectionLevel="6"/>
+			<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="4"/>
+			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+		</Params>
+	</Armor>
+<!-- Heavy ^ -->
+	<Armor name="armor_6B46_OPFOR" inventoryBinding="Armor" unlockCost="4"
+			tooltip="6B46 Plate Carrier"
+			description="@armor_6B46_desc"
+			img="data/models/equipment/armor_6B46_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="+1"/>
+		<ConcealmentModifier add="-3" />
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="5"/>
+			<ProtectionArc degrees="270" coveragePercent="0" piercingProtectionLevel="0"/>
+			<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+		</Params>
+	</Armor>
+<!-- Light ^ -->
 <!-- Sights -->
 
 <Scope name="PSO1M2_RGF_OPFOR" unlockCost="0"
@@ -284,7 +313,7 @@
 	<Bind eqp="RPG26_RGF_OPFOR">
 		<to name="338_SniperRifle"/>
 	</Bind>
-	<Firearm name="RPG26_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rpg" unlockCost="2"
+	<Firearm name="RPG26_RGF_OPFOR" inventoryBinding="SecondaryWeapon" category="rpg" unlockCost="2"
 			tooltip="RPG-26 Launcher"
 			description="@firearm_RPG26RGF_desc"
 			img="data/models/weapons/rpg26_ui.dds"
