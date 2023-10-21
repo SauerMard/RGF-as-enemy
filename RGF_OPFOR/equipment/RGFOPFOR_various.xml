@@ -1,6 +1,21 @@
 <Equipment>
 
 <!-- Helmets -->
+	<Helmet name="HelmetBumpOPFOR" inventoryBinding="Helmet" unlockCost="2"
+			tooltip="Bump Helmet"
+			description="@helmet_CIA_bump_desc"
+			img="data/models/humans/attachments/bump_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="2" turnSpeedModifierPercent="1"/>
+		<ConcealmentModifier add="-2" />
+		<RenderObject3D model="data/models/humans/attachments/cia_ballistic_helmet.khm" diffuseTex="data/models/humans/attachments/cia_bump_helmet.dds" attachSlot="Bip001 Head">
+		</RenderObject3D>
+
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0"/>
+		</Params>
+	</Helmet>
+
     <Helmet name="hat_VKBO_OPFOR" inventoryBinding="Helmet"  unlockCost="0"
 			tooltip="VKBO Field Cap"
 			img="data/models/humans/attachments/VKBO_cap_ui.tga"

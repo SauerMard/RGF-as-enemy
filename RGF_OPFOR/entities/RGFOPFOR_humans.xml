@@ -1,7 +1,7 @@
 <Entities>
 
     <Entity name="Grunt Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -9,7 +9,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 
-            <Id name="Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Traits chanceToBlindFire="0.5" stopsToShoot="true"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
@@ -24,14 +24,14 @@
     </Entity>
 
     <Entity name="Rocket Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
         <Human type="BadGuy">
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-            <Id name="Grenadier" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Grenadier" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" />
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
@@ -46,7 +46,7 @@
     </Entity>
 
     <Entity name="Grunt + Rocket Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -54,7 +54,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToBlindFire="0.5" stopsToShoot="true" chanceToThrowGrenade="0.10" />
-            <Id name="Grenadier" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Grenadier" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -70,7 +70,7 @@
     </Entity>
 
     <Entity name="Veteran Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -78,7 +78,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" />
-            <Id name="Veteran Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Veteran Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -94,7 +94,7 @@
     </Entity>
 
     <Entity name="Veteran Insurgent LongRange" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -102,7 +102,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true"/>
-            <Id name="Recon Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Recon Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -119,7 +119,7 @@
     </Entity>
 
     <Entity name="Machinegunner" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -127,7 +127,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
-            <Id name="Machine Gunner" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Machine Gunner" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -142,7 +142,7 @@
     </Entity>
 
     <Entity name="Machinegunner 762" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -150,7 +150,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
-            <Id name="Machine Gunner" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Machine Gunner" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -165,7 +165,7 @@
     </Entity>
 
     <Entity name="Machinegunner OldSchool" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -173,7 +173,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
             <Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
-            <Id name="Machine Gunner" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Machine Gunner" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -189,7 +189,7 @@
     </Entity>
 
     <Entity name="Sniper Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -197,7 +197,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 			<Traits chanceToBlindFire="0" stopsToShoot="true" chanceToThrowGrenade="0.0" />
-            <Id name="Marksman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Marksman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -213,7 +213,7 @@
     </Entity>
 
     <Entity name="Pistol Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -221,7 +221,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 
-            <Id name="Crewman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Crewman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Traits chanceToBlindFire="0.0" stopsToShoot="true" />
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
@@ -236,14 +236,14 @@
     </Entity>
 
     <Entity name="Rabble" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
         <Human type="BadGuy">
             <FOV degrees="75" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="5.0"/>
-            <Id name="Conscript" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Conscript" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Traits chanceToBlindFire="0.0" stopsToShoot="true" />
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
@@ -258,14 +258,14 @@
     </Entity>
 
 <Entity name="Rabble PM" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
         <Human type="BadGuy">
             <FOV degrees="75" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="5.0"/>
-            <Id name="Conscript" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Conscript" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Traits chanceToBlindFire="0.5" stopsToShoot="true" />
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
@@ -280,7 +280,7 @@
     </Entity>
 
 <Entity name="Foreign Advisor" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_shortmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -288,7 +288,7 @@
             <FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="25.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" />
-            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -306,7 +306,7 @@
     </Entity>
 
 <Entity name="Foreign Advisor Fanatic" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_shortmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -314,7 +314,7 @@
             <FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="35.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" ignoresDangerAreas="true"/>
-            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -332,7 +332,7 @@
     </Entity>
 
     <Entity name="FAdvisor Leader" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_shortface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
 			<Specular shininess="8" intensity="1.3"/>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
@@ -358,10 +358,35 @@
 		</Human>
 	</Entity>
 
+    <Entity name="Bodyguard AKSU" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/bodyguard.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/enemy_vest_heavy.khm" diffuseTex="data/models/humans/attachments/enemy_vest_heavy.dds"/>		
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
+			<Id name="Private Security" portrait="data/textures/portraits/enemy_grunt_pistol.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0.0" stopsToShoot="true" />
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="AK74MR_RGF_OPFOR"/>
+                <Item name="Kobra_RGF_OPFOR"/>
+                <Item name="MP443_RGF_OPFOR"/>
+                <Item name="HelmetBumpOPFOR"/>
+                <Item name="armor_6B43_OPFOR"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
 <!-- Weaponless -->
 
 <Entity name="FAdvisor Fanatic Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_shortmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -369,7 +394,7 @@
             <FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="35.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" ignoresDangerAreas="true"/>
-            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -383,14 +408,14 @@
     </Entity>
 
     <Entity name="Grunt Insurgent Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
         <Human type="BadGuy">
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat"  suppressionRecovery="10.0"/>
-            <Id name="Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Traits chanceToBlindFire="0.5" stopsToShoot="true"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
@@ -404,7 +429,7 @@
     </Entity>
 
     <Entity name="Veteran Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -412,7 +437,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" />
-            <Id name="Veteran Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Veteran Rifleman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -426,14 +451,14 @@
     </Entity>
 
     <Entity name="Pistol Insurgent Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
         <Human type="BadGuy">
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
-            <Id name="Crewman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Crewman" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Traits chanceToBlindFire="0.5" stopsToShoot="true" roamAround="true"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
@@ -447,14 +472,14 @@
     </Entity>
 
 <Entity name="Rabble Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
         <Human type="BadGuy">
             <FOV degrees="75" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="5.0"/>
-            <Id name="Conscript" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Conscript" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Traits chanceToInvestigate="0.0" stopsToShoot="true" usesSuppressionFire="true"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
@@ -468,7 +493,7 @@
     </Entity>
 
 <Entity name="Rocket Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -476,7 +501,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
 			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" chanceToThrowGrenade="0.10" />
-            <Id name="Grenadier" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Grenadier" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -489,7 +514,7 @@
     </Entity>
 
     <Entity name="Machinegunner Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -497,7 +522,7 @@
             <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToInvestigate="0.0" chanceToAmbush="1.0" stopsToShoot="true" usesSuppressionFire="true"/>
-            <Id name="Machine Gunner" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Machine Gunner" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -511,7 +536,7 @@
     </Entity>
 
     <Entity name="Foreign Advisor Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_shortmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
@@ -519,7 +544,7 @@
             <FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="25.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" />
-            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
