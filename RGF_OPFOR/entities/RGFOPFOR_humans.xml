@@ -89,6 +89,7 @@
 
             <Equipment>
                 <Item name="AK74_RGF_OPFOR"/>
+                <Item name="RGF_RGD_OPFOR"/>
                 <Item name="helmet_6B27_OPFOR"/>
                 <Item name="armor_6B45_OPFOR"/>
             </Equipment>
@@ -114,6 +115,7 @@
             <Equipment>
                 <Item name="ASM_RGF_OPFOR"/>
                 <Item name="PSO1M2_RGF_OPFOR"/>
+                <Item name="RGF_RGD_OPFOR"/>
                 <Item name="hat_VKBO_OPFOR"/>
                 <Item name="armor_6B45_OPFOR"/>
             </Equipment>
@@ -186,6 +188,7 @@
 
             <Equipment>
                 <Item name="PKM_RGF_OPFOR"/>
+                <Item name="Makarov_RGF_OPFOR"/>
                 <Item name="helmet_6B27_OPFOR"/>
                 <Item name="armor_6B46_OPFOR"/>
             </Equipment>
@@ -286,7 +289,112 @@
         </Human>
     </Entity>
 
+<Entity name="Foreign Advisor" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
+        <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+        <PhysicalParams health="100"/>
+        <Human type="BadGuy">
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+            <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+
+            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Traits chanceToBlindFire="0.25" chanceToAmbush="0.35" stopsToShoot="true" 	chanceToThrowGrenade="0.1"/>
+            <Mobility>
+                <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+                <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+            </Mobility>
+
+            <Equipment>
+                <Item name="ASM_RGF_OPFOR"/>
+                <Item name="Kobra_RGF_OPFOR"/>
+                <Item name="MP443_RGF_OPFOR"/>
+                <Item name="RGF_RGD_OPFOR"/>
+                <Item name="helmet_6B47_OPFOR"/>
+                <Item name="armor_6B46_OPFOR"/>
+            </Equipment>
+        </Human>
+    </Entity>
+
+<Entity name="Foreign Advisor Fanatic" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
+        <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+        <PhysicalParams health="100"/>
+        <Human type="BadGuy">
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+            <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+
+            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Traits chanceToBlindFire="0.25" chanceToAmbush="0.35" stopsToShoot="true" 	chanceToThrowGrenade="0.075"/>
+            <Mobility>
+                <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+                <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+            </Mobility>
+
+            <Equipment>
+                <Item name="AK74MR_RGF_OPFOR"/>
+                <Item name="Kobra_RGF_OPFOR"/>
+                <Item name="MP443_RGF_OPFOR"/>
+                <Item name="RGF_RGN_OPFOR"/>
+                <Item name="helmet_6B47_OPFOR"/>
+                <Item name="armor_6B46_OPFOR"/>
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="FAdvisor Leader" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/rogue_assaulter.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/rogue_assaulter_vest.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/rogue_bloody_helmet.dds" attachSlot="Bip001 Head"/>
+			<Specular shininess="8" intensity="1.3"/>
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		
+		<PhysicalParams health="100" />
+		<Human type="BadGuy">
+			<FOV degrees="160" distanceMeters="999" eyeRadiusMeters="1.5"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="0.0"/>
+			<Traits chanceToAmbush="1.0" chanceToInvestigate="1.0" usesSuppressionFire="true" ignoresDangerAreas="true" stopsToShoot="false" />
+			<Id name="Commander Keen" portrait="data/textures/portraits/ranger6.dds" gender="0" voicePack="m_rogue"/>
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+				<TurnSpeed min="7.5" defaultMetersPerSec="15" max="23"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="AK74MR_RGF_OPFOR"/>
+                <Item name="Kobra_RGF_OPFOR"/>
+                <Item name="MP443_RGF_OPFOR"/>
+                <Item name="helmet_6B47_OPFOR"/>
+                <Item name="armor_6B46_OPFOR"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
 <!-- Weaponless -->
+
+<Entity name="FAdvisor Fanatic Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
+        <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+        <PhysicalParams health="100"/>
+        <Human type="BadGuy">
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+            <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+
+            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Traits chanceToBlindFire="0.25" chanceToAmbush="0.35" stopsToShoot="true" 	chanceToThrowGrenade="0.05"/>
+            <Mobility>
+                <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+                <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+            </Mobility>
+
+            <Equipment>
+                <Item name="helmet_6B47_OPFOR"/>
+                <Item name="armor_6B46_OPFOR"/>
+            </Equipment>
+        </Human>
+    </Entity>
 
     <Entity name="Grunt Insurgent Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
         <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
@@ -444,4 +552,28 @@
             </Equipment>
         </Human>
     </Entity>
+
+    <Entity name="Foreign Advisor Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+        <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_assaulter.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
+        <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+        <PhysicalParams health="100"/>
+        <Human type="BadGuy">
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+            <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+
+            <Id name="Spetsnaz" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="male_very_american"/>
+            <Traits chanceToBlindFire="0.25" chanceToAmbush="0.35" stopsToShoot="true" 	chanceToThrowGrenade="0.05"/>
+            <Mobility>
+                <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+                <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+            </Mobility>
+
+            <Equipment>
+                <Item name="helmet_6B47_OPFOR"/>
+                <Item name="armor_6B46_OPFOR"/>
+            </Equipment>
+        </Human>
+    </Entity>
+
 </Entities>	

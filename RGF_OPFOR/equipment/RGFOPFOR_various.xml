@@ -25,6 +25,19 @@
 			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
 		</Params>
 	</Helmet>
+
+	<Helmet name="helmet_6B47_OPFOR" inventoryBinding="Helmet" unlockCost="2"
+			tooltip="6B47 Helmet"
+			description="@helmet_6B47_desc"
+			img="data/models/humans/attachments/6B47_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<ConcealmentModifier add="0" />
+    <RenderObject3D model="data/models/humans/attachments/6B47.khm" diffuseTex="data/models/humans/attachments/6B47.dds" attachSlot="Bip001 Head"/>
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="360" coveragePercent="18" piercingProtectionLevel="4"/>
+		</Params>
+	</Helmet>
 <!-- Armor -->
     <Armor name="armor_6B45_OPFOR" inventoryBinding="Armor" unlockCost="0" 
 			tooltip="6B45 Body Armor"
@@ -69,6 +82,198 @@
 	</Armor>
 <!-- Light ^ -->
 <!-- Sights -->
+
+<Scope name="PKAS_RGF_OPFOR" unlockCost="1"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="PK-AS 1x"
+			description="@scope_pkasRGF_desc"
+			img="data/models/weapons/attachments/pk_as_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/pk_as.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/pk_as.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
+		<Params>
+			<EquipmentModifier>
+				<AddTo
+					reloadTime="+100"
+					reloadEmptyTime="+150"
+					readyTime="+10"
+				/>
+			</EquipmentModifier>
+
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-60"
+					maxAimTime2="-60"
+					resetTime="-60"
+					accuracyAdd="+50"
+					critChanceAdd="+2"
+
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-60"
+					maxAimTime2="-140"
+					resetTime="-100"
+					accuracyAdd="+10"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-140"
+					maxAimTime2="-100"
+					resetTime="-20"
+					accuracyAdd="+10"
+					critChanceAdd="+1"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-20"
+					accuracyAdd="+5"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-20"
+					maxAimTime2="-10"
+					accuracyAdd="+2"
+				/>
+			</AttackTypeModifier>
+
+		</Params>
+	</Scope>
+
+<Scope name="Kobra_RGF_OPFOR" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="EKP Kobra 1x"
+			description="@scope_kobraRGF_desc"
+			img="data/models/weapons/attachments/kobra_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/kobra.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/kobra.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+
+    <Params>
+			<EquipmentModifier>
+				<AddTo
+					reloadTime="+80"
+					reloadEmptyTime="+80"
+				/>
+			</EquipmentModifier>
+
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-100"
+					resetTime="-80"
+					accuracyAdd="+50"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-50"
+					resetTime="-20"
+					accuracyAdd="+10"
+					critChanceAdd="+5"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-50"
+					maxAimTime2="+15"
+					resetTime="-10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="+15"
+					maxAimTime2="+30"
+				/>
+			</AttackTypeModifier>
+
+		</Params>
+
+	</Scope>
+
+<Scope name="PKAS_RGF_OPFOR" unlockCost="1"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="PK-AS 1x"
+			description="@scope_pkasRGF_desc"
+			img="data/models/weapons/attachments/pk_as_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/pk_as.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/pk_as.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-1"/>
+		<Params>
+			<EquipmentModifier>
+				<AddTo
+					reloadTime="+100"
+					reloadEmptyTime="+150"
+					readyTime="+10"
+				/>
+			</EquipmentModifier>
+
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-60"
+					maxAimTime2="-60"
+					resetTime="-60"
+					accuracyAdd="+50"
+					critChanceAdd="+2"
+
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-60"
+					maxAimTime2="-140"
+					resetTime="-100"
+					accuracyAdd="+10"
+					critChanceAdd="+10"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-140"
+					maxAimTime2="-100"
+					resetTime="-20"
+					accuracyAdd="+10"
+					critChanceAdd="+1"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-20"
+					accuracyAdd="+5"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-20"
+					maxAimTime2="-10"
+					accuracyAdd="+2"
+				/>
+			</AttackTypeModifier>
+
+		</Params>
+	</Scope>
 
 <Scope name="PSO1M2_RGF_OPFOR" unlockCost="0"
 			inventoryBinding="PrimaryWeaponScope"
@@ -421,4 +626,139 @@
 			<Empty name="gen_empty"/>
 		</Sounds>
 	</Firearm>
+
+<!-- Grenades -->
+<Grenade name="RGF_RGD_OPFOR" inventoryBinding="UtilityPouch"
+			quantity="2"
+
+			tooltip="2x Frag Grenade"
+			description="@RGF_RGD_desc"
+			img="data/models/equipment/RGD_grenade_ui.dds"
+			movie="data/movies/frag.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="FragGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			soundExplosion="frag_expl"
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_FRAG"
+
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="2000"
+
+			physicsDetonationForce="60"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="30">
+
+			<!-- spawn these when exploding -->
+			<FX
+				particles="FragGrenade"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				anim2D="">
+			</FX>
+
+      <EffectRange radiusMeters="3.0">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="3"/>
+				<SuppressEffect amount="20"/>
+				<SmokeEffect durationMSec="1030" />
+			</EffectRange>
+			<EffectRange radiusMeters="5.0">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="800" outerRangeTimeMSec="500"/>
+				<DamageEffect chancePercent="50" damage="50" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="0"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+			<EffectRange radiusMeters="8.0">
+				<DamageEffect chancePercent="30" damage="25" damageType="1"/>
+				<ScatterEffect chancePercent="100" rangeMeters="3" armorPenetration="0"/>
+				<SuppressEffect amount="10"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+<Grenade name="RGF_RGN_OPFOR" inventoryBinding="UtilityPouch"
+			quantity="1"
+
+			tooltip="2x Impact Grenade"
+			description="@RGF_RGN_desc"
+			img="data/models/equipment/RGN_grenade_ui.dds"
+			movie="data/movies/frag.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+		>
+		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/frag_grenade.dds"/>
+		<ConcealmentModifier add="-2"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="FragGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			soundExplosion="frag_expl"
+			soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_FRAG"
+
+			friendlyFire="true"
+			triggerOnImpact="true"
+			triggerTimeAfterTargetHitMsec="100"
+
+			physicsDetonationForce="60"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="30">
+
+			<!-- spawn these when exploding -->
+			<FX
+				particles="FragGrenade"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="1.5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="3"/>
+				<SuppressEffect amount="20"/>
+				<SmokeEffect durationMSec="1030" />
+			</EffectRange>
+			<EffectRange radiusMeters="3.0">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="800" outerRangeTimeMSec="500"/>
+				<DamageEffect chancePercent="50" damage="25" damageType="1"/>
+				<ScatterEffect chancePercent="100" rangeMeters="3" armorPenetration="0"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
 </Equipment>

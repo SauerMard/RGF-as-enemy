@@ -112,4 +112,20 @@
   </Params>
 </Ammo>
 
+<Ammo name="9x19_7N21_RGF"
+    tooltip="7N21 80gr AP"
+    description="@ammo_7N21_desc"
+    img="data/models/weapons/attachments/m1152_ammo_ui.dds">
+
+  <Params	roundsPerSecond="14"
+      audibleSoundRadius="50"
+      physicsImpactForce="2.0"
+      damageType="0"
+      silenced="0">
+    <Damage start="21" end="19" startDist="0" endDist="45"/>
+    <CriticalChancePercent start="35" end="20" startDist="0" endDist="30"/>
+    <ArmorPenetration start="5" end="4" startDist="0" endDist="50"/>
+  </Params>
+</Ammo>
+
 </Equipment>
