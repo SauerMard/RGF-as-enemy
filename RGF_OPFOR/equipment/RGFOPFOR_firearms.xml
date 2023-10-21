@@ -282,6 +282,76 @@
 
 <!-- Carbines -->
 
+<Bind eqp="AK_105_OPFOR">
+	  <to name="545x39_FMJ_7N10_SB_RGF"/>
+    <to name="holosight_OPFOR"/>
+	</Bind>
+	<Firearm name="AK_105_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+			tooltip="AK-105"
+			description="@firearm_ak105alphacia_desc"
+			img="data/models/weapons/alpha_ak_ui.dds"
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="-3"/>
+		<RenderObject3D model="data/models/weapons/alpha_ak.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_ak_105.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="45"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2000"
+			reloadEmptyTime="2700"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="400"
+			guardTime="200"
+
+			accuracyStart="170"
+			accuracyEnd="80"
+			accuracyStartDist="0"
+			accuracyEndDist="70"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_545x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="rpk74_mag"
+			suppressedSwitch="AK 105 Alpha Sup CIA BOps"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="20.0"
+			ai_rangeMax="40.0"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="RGF_CloseAutoFire" rangeMeters="10"/>
+      <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
+      <AttackType name="RGF_AimedSemi" rangeMeters="50"/>
+      <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="aks103_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+</Firearm>
+
 <Bind eqp="AKS74U_RGF_OPFOR">
   <to name="545x39_FMJ_7N10_SB_RGF"/>
 </Bind>
@@ -536,7 +606,7 @@
     caliberInfoText="@firearm_caliber_545x39_name"
     operationInfoText="@firearm_operation_semifull_name"
     ejectingShellEntity="BulletCasingLarge"
-    magazineEntity="aks_mag"
+    magazineEntity="rpk74_mag"
     ai_rangeMin="1.0"
     ai_rangeOptimal="18.0"
     ai_rangeMax="40.0"
