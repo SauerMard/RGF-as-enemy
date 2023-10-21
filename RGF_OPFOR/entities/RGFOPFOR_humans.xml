@@ -360,7 +360,7 @@
 
     <Entity name="Bodyguard AKSU" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/bodyguard.dds"/>
-        <RenderObject3D model="data/models/humans/attachments/enemy_vest_heavy.khm" diffuseTex="data/models/humans/attachments/enemy_vest_heavy.dds"/>		
+        <RenderObject3D model="data/models/humans/attachments/swat_leader_Vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>		
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
 		<Human type="BadGuy">
@@ -377,7 +377,7 @@
 				<Item name="AK74MR_RGF_OPFOR"/>
                 <Item name="Kobra_RGF_OPFOR"/>
                 <Item name="MP443_RGF_OPFOR"/>
-                <Item name="HelmetBumpOPFOR"/>
+                <Item name="CapBodyguard"/>
                 <Item name="armor_6B43_OPFOR"/>
 			</Equipment>
 		</Human>

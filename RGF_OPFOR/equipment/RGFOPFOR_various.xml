@@ -1,18 +1,31 @@
 <Equipment>
 
 <!-- Helmets -->
-	<Helmet name="HelmetBumpOPFOR" inventoryBinding="Helmet" unlockCost="2"
-			tooltip="Bump Helmet"
-			description="@helmet_CIA_bump_desc"
-			img="data/models/humans/attachments/bump_helmet_ui.dds"
+	<Helmet name="CapBodyguard" inventoryBinding="Helmet" unlockCost="0"
+			tooltip="Baseball Cap"
+			description="@helmet_CIA_basiccap_desc"
+			img="data/models/humans/attachments/cia_cap_ui.dds"
 		>
-		<MobilityModifiers moveSpeedModifierPercent="2" turnSpeedModifierPercent="1"/>
+		<MobilityModifiers moveSpeedModifierPercent="3" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="0" />
+		<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/RGF_black_hat.dds" attachSlot="Bip001 Head"/>
+		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0"/>
+		</Params>
+	</Helmet>
+
+	<Helmet name="FAST_OPFOR" inventoryBinding="Helmet" unlockCost="4"
+			tooltip="High Cut Helmet"
+			description="@helmet_CIA_fast_desc"
+			img="data/models/humans/attachments/ranger_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-1"/>
 		<ConcealmentModifier add="-2" />
-		<RenderObject3D model="data/models/humans/attachments/cia_ballistic_helmet.khm" diffuseTex="data/models/humans/attachments/cia_bump_helmet.dds" attachSlot="Bip001 Head">
+		<RenderObject3D model="data/models/humans/attachments/cia_ballistic_helmet.khm" diffuseTex="data/models/humans/attachments/RGF_black_helmet.dds" attachSlot="Bip001 Head">
 		</RenderObject3D>
 
-		<Params protectionInfoText="@equipment_protect2">
-			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0"/>
+		<Params protectionInfoText="@equipment_protect1">
+			<ProtectionArc degrees="360" coveragePercent="10" piercingProtectionLevel="4"/>
 		</Params>
 	</Helmet>
 
