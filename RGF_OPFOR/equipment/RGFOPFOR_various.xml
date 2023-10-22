@@ -511,6 +511,115 @@
 
 <!-- Misc -->
 
+<Bind eqp="RPOZ_RGF_OPFOR">
+		<to name="338_SniperRifle"/>
+
+		<to name="IronSights"/>
+	</Bind>
+	<Firearm name="RPOZ_RGF_OPFOR" inventoryBinding="SupportGear1" category="rpg" unlockCost="4"
+			tooltip="RPO-Z Launcher"
+			description="@firearm_RPOZ_RGF_desc"
+			img="data/models/weapons/RGF_rpoz_ui.dds"
+			animationSet="rpg26"
+			movie="data/movies/rocket_launcher.ogv"
+			discardWithEntityWhenEmpty="DiscardedRpg26"
+		>
+
+		<RenderObject3D model="data/models/weapons/rpg26_trooper.khm" attachSlot="prop_back_rpg" skipGOSSAO="true" diffuseTex="data/models/weapons/rpg26.dds">
+			<Specular shininess="32" intensity="4.0"/>
+		</RenderObject3D>
+		<MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-4"/>
+		<ConcealmentModifier add="-4" />
+		<ModifiableParams
+			projectilesPerMagazine="1"
+
+			reloadTime="3000"
+			reloadEmptyTime="3000"
+			changeInTime="1400"
+			changeOutTime="500"
+			readyTime="600"
+			guardTime="350"
+		/>
+
+		<Params
+			caliberInfoText="93mm Incendiary"
+			operationInfoText="@firearm_operation_singleshotthrow_name"
+			ai_rangeMin="12.0"
+			ai_rangeOptimal="20.0"
+			ai_rangeMax="80.0"
+			ai_stopWhenShooting="true"
+		/>
+
+
+		<AttackTypesProjectile>
+			<AttackType name="CIA_RPG_QuickAimClose" rangeMeters="14"/>
+			<AttackType name="CIA_RPG_QuickAim" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge">
+			<Flare particles="RpgLaunch_02" />
+		</MuzzleFlash>
+
+		<Projectile
+			bodyTemplate="Rpg26RocketBody"
+			trailParticles="RpgTrail2"
+			lightTemplate="Rocket Red"
+
+			soundExplosion="rpg_expl"
+			soundVoiceOnLaunch="vox_trpr_01_gear_flash"
+			soundOnSpawn="rpg26_fire"
+			soundFollow="rpg_fly_travel"
+
+			ai_aimForCover="false"
+			ai_launchBlastRadius="3.0"
+
+			minVelocity="2.0"
+			maxVelocity="20.0"
+			acceleration="4.0"
+			mass="0.0"
+			friendlyFire="true"
+			triggerOnImpact="true"
+
+			roundsPerSecond="2.0"
+			accuracyPercent="82"
+			physicsDetonationForce="100"
+			audibleLaunchSoundRadius="15"
+			audibleDetonationSoundRadius="100"
+			>
+
+			<FX
+				particles="Molotov_Explosion"
+				entity1="ExplosionLight"
+				entity2="Explosion Scorch Mark"
+				entity3="FX_dust_large"
+				anim2D="">
+			</FX>
+
+			<Shrapnel projectileSource="Extra_MolotovShrapnel" min="20" max="24" spreadRadius="4" />
+
+		 <EffectRange radiusMeters="1.0">
+				<DamageEffect chancePercent="100" damage="50" damageType="0"  armorPenetration="0"/>
+				<FireEffect durationMSec="8000"/>
+				<DOTEffect durationMSec="15000" dps="10.0"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="4">
+				<StunEffect chancePercent="50" innerRangeTimeMSec="3000" outerRangeTimeMSec="1500"/>
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="30"/>
+			</EffectRange>
+		</Projectile>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<!-- <Reload name="rifle_reld"/> -->
+			<!-- <ReloadEmpty name="rifle_reldempt"/> -->
+			<!-- <Fire name="type56_fire"/> -->
+			<!-- <ShellDrop name="rifle_shell_drop"/> -->
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
 <Bind eqp="RPG7HEAT_RGF_OPFOR">
 		<to name="338_SniperRifle"/>
 	</Bind>

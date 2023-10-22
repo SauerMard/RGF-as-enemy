@@ -93,6 +93,79 @@
         </Human>
     </Entity>
 
+    <Entity name="Suicide Bomber" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
+        <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+        <PhysicalParams health="100"/>
+        <Human type="BadGuy">
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+            <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
+			<Traits chanceToBlindFire="0.5" stopsToShoot="true" chanceToThrowGrenade="0.10" />
+            <Id name="Grenadier" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+            <Mobility>
+                <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+                <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+            </Mobility>
+
+            <Equipment>
+                <Item name="AKS74U_RGF_OPFOR"/>
+                <Item name="RPOZ_RGF_OPFOR"/>
+                <Item name="helmet_6B27_OPFOR"/>
+                <Item name="armor_6B46_OPFOR"/>
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="Suicide Bomber Strong" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longface.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
+        <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+        <PhysicalParams health="100"/>
+        <Human type="BadGuy">
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+            <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="10.0"/>
+			<Traits chanceToBlindFire="0.5" stopsToShoot="true" chanceToThrowGrenade="0.10" />
+            <Id name="Grenadier" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+            <Mobility>
+                <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+                <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+            </Mobility>
+
+            <Equipment>
+                <Item name="AKS74U_RGF_OPFOR"/>
+                <Item name="RPOZ_RGF_OPFOR"/>
+                <Item name="helmet_6B27_OPFOR"/>
+                <Item name="armor_6B43_OPFOR"/>
+            </Equipment>
+        </Human>
+    </Entity>
+
+    <Entity name="Suicide Executioner" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+        <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/swat_armband.khm" diffuseTex="data/models/humans/attachments/swat_armband.dds" attachSlot="Bip001 L UpperArm"/>
+        <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+        <PhysicalParams health="100"/>
+        <Human type="BadGuy">
+            <FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+            <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Executioner" suppressionRecovery="10.0"/>
+			<Traits chanceToBlindFire="0.5" stopsToShoot="true" chanceToThrowGrenade="0.10" />
+            <Id name="Executioner Grenadier" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+            <Mobility>
+                <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
+                <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+            </Mobility>
+
+            <Equipment>
+                <Item name="AKS74U_RGF_OPFOR"/>
+                <Item name="RPOZ_RGF_OPFOR"/>
+                <Item name="killer_6B27_OPFOR"/>
+                <Item name="armor_6B46_OPFOR"/>
+            </Equipment>
+        </Human>
+    </Entity>
+
     <Entity name="Veteran Insurgent" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
         <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_longmask.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>

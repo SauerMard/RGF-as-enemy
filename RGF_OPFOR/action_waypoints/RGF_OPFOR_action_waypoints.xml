@@ -30,6 +30,13 @@
 		ttip="Throw smoke grenade"
 		ttip_disabled="@menu_generic_cannot_use"
 		ttip_empty="Out of smoke grenades"/>
+	<wp
+		type="ROCKET_LAUNCHER"
+		equipment="RPOZ_RGF_OPFOR"
+		ui_prefix="data/textures/gui_ingame/waypoints/rocket_launcher"
+		ttip="@menu_game_rocketlaunch_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_grenadelaunch_none_ttip"/>
 
 	<wp
 		type="ROCKET_LAUNCHER"
