@@ -680,8 +680,7 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="AK_105_OPFOR"/>
-                <Item name="holosight_OPFOR"/>
+				<Item name="Vityaz_OPFOR"/>
                 <Item name="MP443_RGF_OPFOR"/>
                 <Item name="CapBodyguard"/>
                 <Item name="armor_6B46_OPFOR"/>
