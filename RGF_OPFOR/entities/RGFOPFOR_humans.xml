@@ -515,7 +515,7 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="AK_105_OPFOR"/>
+				<Item name="AKS74U_RGF_OPFOR"/>
                 <Item name="holosight_OPFOR"/>
                 <Item name="MP443_RGF_OPFOR"/>
                 <Item name="CapBodyguard"/>
@@ -592,7 +592,32 @@
 		</Human>
 	</Entity>
 
-    <Entity name="Bodyguard Heavy AKSU" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+    <Entity name="Bodyguard AKSU Armored" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/bodyguard.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>		
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
+			<Id name="Private Security" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0.0" stopsToShoot="true" />
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="AK_105_OPFOR"/>
+                <Item name="holosight_OPFOR"/>
+                <Item name="MP443_RGF_OPFOR"/>
+                <Item name="CapBodyguard"/>
+                <Item name="armor_6B46_OPFOR"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+<Entity name="Bodyguard Heavy AKSU" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/bodyguard.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_Vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>		
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
@@ -617,7 +642,7 @@
 		</Human>
 	</Entity>
 
-<Entity name="Bodyguard Heavy RPK16S" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+    <Entity name="Bodyguard Heavy RPK16S" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/bodyguard.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_Vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>		
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
@@ -644,14 +669,14 @@
 
     <Entity name="Blackhead Elite" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
         <RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_conscript.dds"/>
-        <RenderObject3D model="data/models/humans/attachments/swat_leader_Vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>	
+        <RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>	
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
         <PhysicalParams health="100"/>
         <Human type="BadGuy">
             <FOV degrees="110" distanceMeters="999" eyeRadiusMeters="1.0"/>
             <Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
 			<Traits chanceToBlindFire="0.5" stopsToShoot="false" chanceToThrowGrenade="0.05" usesSuppressionFire="true"/>
-            <Id name="Instructor" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+            <Id name="Local Recruit" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
             <Mobility>
                 <MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
                 <TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
@@ -691,7 +716,7 @@
 	</Entity>
 
     <Entity name="Generic Tango Shottie" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_tango.dds">
+		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_tango_sleeve.dds">
             <Specular shininess="0" intensity="0"/>
         </RenderObject3D>
         <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>		
@@ -711,14 +736,14 @@
 				<Item name="ASM_RGF_OPFOR"/>
                 <Item name="Kobra_RGF_OPFOR"/>
                 <Item name="MP443_RGF_OPFOR"/>
-                <Item name="CapBodyguard"/>
+                <Item name="FAST_OPFOR"/>
                 <Item name="armor_6B46_OPFOR"/>
 			</Equipment>
 		</Human>
 	</Entity>
 
     <Entity name="Generic Tango 2 Uzi" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_tango_sleeve.dds">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_tango.dds">
             <Specular shininess="0" intensity="0"/>
         </RenderObject3D>
         <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>		
@@ -735,9 +760,9 @@
 			</Mobility>
 
 			<Equipment>
-				<Item name="Vityaz_OPFOR"/>
+				<Item name="Vityaz_OPFOR_SD"/>
                 <Item name="MP443_RGF_OPFOR"/>
-                <Item name="FAST_OPFOR"/>
+                <Item name="CapBodyguard"/>
                 <Item name="armor_6B46_OPFOR"/>
 			</Equipment>
 		</Human>

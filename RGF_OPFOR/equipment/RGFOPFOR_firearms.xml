@@ -624,6 +624,75 @@
 		</Sounds>
 </Firearm>
 
+<Bind eqp="Vityaz_OPFOR_SD">
+  <to name="9x19_7N21SD_RGF"/>
+</Bind>
+<Firearm name="Vityaz_OPFOR_SD" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
+    tooltip="PP-19 Vityaz Suppressed"
+    description="@firearm_pp2k_RGF_desc"
+    img="data/models/weapons/RGF_pp19-1_ui.dds"
+
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+  <ConcealmentModifier add="-2"/>
+  <RenderObject3D model="data/models/weapons/RGF_Vityaz.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_Vityaz.dds"/>
+  <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2700"
+    reloadEmptyTime="2700"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="350"
+		guardTime="160"
+
+    accuracyStart="200"
+    accuracyEnd="100"
+    accuracyStartDist="0"
+    accuracyEndDist="60"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_9x19_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingSmall"
+    magazineEntity="mp5_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="15.0"
+    ai_rangeMax="25.0"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="6"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="10"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="35"/>
+    <AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+      <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+			<Equip name="smg_eqp"/>
+			<Unequip name="smg_neqp"/>
+			<Reload name="smg_reld"/>
+			<ReloadEmpty name="smg_reldempt"/>
+			<Fire name="m9sup_fire"/>
+			<ShellDrop name="smg_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+</Firearm>
+
 <!-- MGs -->
 
 <Bind eqp="RPK_RGF_OPFOR">
