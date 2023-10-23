@@ -674,7 +674,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
-			<Id name="GU Operative" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+			<Id name="GRU Operative" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToBlindFire="0.2" stopsToShoot="true" />
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
@@ -700,7 +700,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
-			<Id name="GU Operative" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+			<Id name="GRU Operative" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToBlindFire="0.2" stopsToShoot="true" />
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
@@ -727,7 +727,7 @@
 		<Human type="BadGuy">
 			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="15.0"/>
-			<Id name="GU Operative" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+			<Id name="GRU Operative" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
 			<Traits chanceToBlindFire="0.0" stopsToShoot="true" />
 			<Mobility>
 				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
