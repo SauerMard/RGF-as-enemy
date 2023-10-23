@@ -664,8 +664,63 @@
         </Human>
     </Entity>
     
+    <Entity name="Generic Tango" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_tango.dds">
+            <Specular shininess="0" intensity="0"/>
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>		
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+			<Id name="GU Operative" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0.2" stopsToShoot="true" />
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="AK74_RGF_OPFOR"/>
+                <Item name="MP443_RGF_OPFOR"/>
+                <Item name="CapBodyguard"/>
+                <Item name="armor_6B46_OPFOR"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
+    <Entity name="Generic Tango Shottie" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_tango.dds">
+            <Specular shininess="0" intensity="0"/>
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>		
+		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="100" />
+		<Human type="BadGuy">
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1.0"/>
+			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Normal Combat" suppressionRecovery="20.0"/>
+			<Id name="GU Operative" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="enemies"/>
+			<Traits chanceToBlindFire="0.2" stopsToShoot="true" />
+			<Mobility>
+				<MoveSpeed min="0.7" defaultMetersPerSec="2.2" max="10"/>
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="ASM_RGF_OPFOR"/>
+                <Item name="Kobra_RGF_OPFOR"/>
+                <Item name="MP443_RGF_OPFOR"/>
+                <Item name="CapBodyguard"/>
+                <Item name="armor_6B46_OPFOR"/>
+			</Equipment>
+		</Human>
+	</Entity>
+
     <Entity name="Generic Tango 2 Uzi" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_tango_sleeve.dds"/>
+		<RenderObject3D model="data/models/humans/ranger_support.khm" diffuseTex="data/models/humans/RGF_tango_sleeve.dds">
+            <Specular shininess="0" intensity="0"/>
+        </RenderObject3D>
         <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>		
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
 		<PhysicalParams health="100" />
@@ -682,7 +737,7 @@
 			<Equipment>
 				<Item name="Vityaz_OPFOR"/>
                 <Item name="MP443_RGF_OPFOR"/>
-                <Item name="CapBodyguard"/>
+                <Item name="FAST_OPFOR"/>
                 <Item name="armor_6B46_OPFOR"/>
 			</Equipment>
 		</Human>
