@@ -67,7 +67,6 @@
 		</Params>
 	</Helmet>
 
-
 	<Helmet name="helmet_6B47_OPFOR" inventoryBinding="Helmet" unlockCost="2"
 			tooltip="6B47 Helmet"
 			description="@helmet_6B47_desc"
@@ -80,6 +79,7 @@
 			<ProtectionArc degrees="360" coveragePercent="18" piercingProtectionLevel="4"/>
 		</Params>
 	</Helmet>
+
 <!-- Armor -->
     <Armor name="armor_6B45_OPFOR" inventoryBinding="Armor" unlockCost="0" 
 			tooltip="6B45 Body Armor"
@@ -123,77 +123,84 @@
 		</Params>
 	</Armor>
 <!-- Light ^ -->
+
 <!-- Sights -->
 
-<Scope name="PKAS_RGF_OPFOR" unlockCost="1"
+	<Scope name="LPVO_6X_OPFOR" unlockCost="2"
 			inventoryBinding="PrimaryWeaponScope"
-			tooltip="PK-AS 1x"
-			description="@scope_pkasRGF_desc"
-			img="data/models/weapons/attachments/pk_as_ui.dds"
+			tooltip="@scope_rangerslpvo6x_name"
+			description="@scope_rangerslpvo6x_desc"
+			img="data/models/weapons/attachments/lpvo_6x_ui.dds"
 		>
-		<RenderObject3D model="data/models/weapons/attachments/pk_as.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/pk_as.dds"/>
-		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
-		<ConcealmentModifier add="-1"/>
+		<RenderObject3D model="data/models/weapons/attachments/scope_lpvo_6x.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lpvo_6x.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-3"/>
+		<ConcealmentModifier add="0"/>
 		<Params>
 			<EquipmentModifier>
 				<AddTo
-					reloadTime="+100"
-					reloadEmptyTime="+150"
-					readyTime="+10"
+					reloadTime="+150"
+					reloadEmptyTime="+200"
+					readyTime="+50"
+					guardTime="+20"
+					changeInTime="+150"
+					changeOutTime="+100"
 				/>
 			</EquipmentModifier>
 
 			<AttackTypeModifier minRange="0" maxRange="7">
 				<AddTo
-					minAimTime2="-60"
-					maxAimTime2="-60"
-					resetTime="-60"
+					minAimTime2="-40"
+					maxAimTime2="-40"
+					resetTime="+0"
 					accuracyAdd="+50"
-					critChanceAdd="+2"
-
+					critChanceAdd="+0"
 				/>
 			</AttackTypeModifier>
 
 			<AttackTypeModifier minRange="7" maxRange="15">
 				<AddTo
-					minAimTime2="-60"
-					maxAimTime2="-140"
-					resetTime="-100"
-					accuracyAdd="+10"
-					critChanceAdd="+10"
+					minAimTime2="-40"
+					maxAimTime2="-100"
+					resetTime="-10"
+					accuracyAdd="+20"
+					critChanceAdd="+15"
 				/>
 			</AttackTypeModifier>
 
 			<AttackTypeModifier minRange="15" maxRange="25">
 				<AddTo
-					minAimTime2="-140"
-					maxAimTime2="-100"
-					resetTime="-20"
-					accuracyAdd="+10"
-					critChanceAdd="+1"
+					minAimTime2="-100"
+					maxAimTime2="-200"
+					resetTime="-80"
+					accuracyAdd="+75"
+					critChanceAdd="+20"
 				/>
 			</AttackTypeModifier>
 
 			<AttackTypeModifier minRange="25" maxRange="50">
 				<AddTo
-					minAimTime2="-100"
-					maxAimTime2="-20"
-					accuracyAdd="+5"
+					minAimTime2="-200"
+					maxAimTime2="-200"
+					resetTime="-100"
+					accuracyAdd="+90"
+					critChanceAdd="+25"
 				/>
 			</AttackTypeModifier>
 
 			<AttackTypeModifier minRange="50" maxRange="100">
 				<AddTo
-					minAimTime2="-20"
-					maxAimTime2="-10"
-					accuracyAdd="+2"
+					minAimTime2="-200"
+					maxAimTime2="-100"
+					resetTime="-30"
+					accuracyAdd="+45"
+					critChanceAdd="+5"
 				/>
 			</AttackTypeModifier>
 
 		</Params>
 	</Scope>
 
-<Scope name="Kobra_RGF_OPFOR" unlockCost="2"
+	<Scope name="Kobra_RGF_OPFOR" unlockCost="2"
 			inventoryBinding="PrimaryWeaponScope"
 			tooltip="EKP Kobra 1x"
 			description="@scope_kobraRGF_desc"
@@ -509,6 +516,79 @@
 		</Params>
 	</Scope>
 
+	<Scope name="LPVO_6X" unlockCost="2"
+			inventoryBinding="PrimaryWeaponScope"
+			tooltip="@scope_rangerslpvo6x_name"
+			description="@scope_rangerslpvo6x_desc"
+			img="data/models/weapons/attachments/lpvo_6x_ui.dds"
+		>
+		<RenderObject3D model="data/models/weapons/attachments/scope_lpvo_6x.khm" attachSlot="optics_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/scope_lpvo_6x.dds"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-3"/>
+		<ConcealmentModifier add="0"/>
+		<Params>
+			<EquipmentModifier>
+				<AddTo
+					reloadTime="+150"
+					reloadEmptyTime="+200"
+					readyTime="+50"
+					guardTime="+20"
+					changeInTime="+150"
+					changeOutTime="+100"
+				/>
+			</EquipmentModifier>
+
+			<AttackTypeModifier minRange="0" maxRange="7">
+				<AddTo
+					minAimTime2="-40"
+					maxAimTime2="-40"
+					resetTime="+0"
+					accuracyAdd="+50"
+					critChanceAdd="+0"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="7" maxRange="15">
+				<AddTo
+					minAimTime2="-40"
+					maxAimTime2="-100"
+					resetTime="-10"
+					accuracyAdd="+20"
+					critChanceAdd="+15"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="15" maxRange="25">
+				<AddTo
+					minAimTime2="-100"
+					maxAimTime2="-200"
+					resetTime="-80"
+					accuracyAdd="+75"
+					critChanceAdd="+20"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="25" maxRange="50">
+				<AddTo
+					minAimTime2="-200"
+					maxAimTime2="-200"
+					resetTime="-100"
+					accuracyAdd="+90"
+					critChanceAdd="+25"
+				/>
+			</AttackTypeModifier>
+
+			<AttackTypeModifier minRange="50" maxRange="100">
+				<AddTo
+					minAimTime2="-200"
+					maxAimTime2="-100"
+					resetTime="-30"
+					accuracyAdd="+45"
+					critChanceAdd="+5"
+				/>
+			</AttackTypeModifier>
+
+		</Params>
+	</Scope>
 <!-- Misc -->
 
 <Bind eqp="RPOZ_RGF_OPFOR">

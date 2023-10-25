@@ -32,6 +32,22 @@
   </Params>
 </Ammo>
 
+<Ammo name="545x39_FMJ_7N22_SD_RGF" unlockCost="2"
+    tooltip="7N22 57gr FMJ"
+    description="@ammo_545x39_FMJ_7N22_RGF_desc"
+    img="data/models/weapons/attachments/m855_ammo_ui.dds">
+
+  <Params roundsPerSecond="10"
+      audibleSoundRadius="3"
+      physicsImpactForce="1.5"
+      damageType="0"
+      silenced="1">
+    <Damage start="30" end="20" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="35" end="17" startDist="0" endDist="60"/>
+    <ArmorPenetration start="6" end="5" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
 <Ammo name="545x39_FMJ_7N10_SB_RGF"
     tooltip="7N10 55gr FMJ"
     description="@ammo_545x39_FMJ_7N10_RGF_desc"
