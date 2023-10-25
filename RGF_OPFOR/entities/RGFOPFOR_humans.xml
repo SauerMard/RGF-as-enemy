@@ -851,6 +851,7 @@
 
     <Entity name="HVT" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" tooltip="@tooltip_enemy_vip" editorTags="hvt" oldName="VIP">
         <RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_shortface.dds"/>
+        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/RGF_vest.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_beret.khm" diffuseTex="data/models/humans/attachments/swat_beret.dds" attachSlot="Bip001 Head"/>
         <AnimationSet name="civilian" />
 		<PhysicalParams health="100" />
@@ -865,6 +866,7 @@
 				<TurnSpeed min="6" defaultMetersPerSec="10" max="20"/>
 			</Mobility>
 			<Equipment>
+                <Item name="armor_6B43_OPFOR"/>
 			</Equipment>
 		</Human>
 	</Entity>
