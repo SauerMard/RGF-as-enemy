@@ -1,0 +1,163 @@
+<Equipment>
+
+<Ammo name="762x39_FMJ_231_RGF"
+    tooltip="57-N-231 122gr FMJ"
+    description="@ammo_762x39_FMJ_231_RGF_desc"
+    img="data/models/weapons/attachments/m855_ammo_ui.dds">
+
+  <Params roundsPerSecond="10"
+      audibleSoundRadius="100"
+      physicsImpactForce="1.5"
+      damageType="0"
+      silenced="0">
+    <Damage start="23" end="19" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="20" end="15" startDist="0" endDist="40"/>
+    <ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="545x39_FMJ_7N10_RGF"
+    tooltip="7N10 55gr FMJ"
+    description="@ammo_545x39_FMJ_7N10_RGF_desc"
+    img="data/models/weapons/attachments/m855_ammo_ui.dds">
+
+  <Params roundsPerSecond="10"
+      audibleSoundRadius="100"
+      physicsImpactForce="1.5"
+      damageType="0"
+      silenced="0">
+    <Damage start="24" end="21" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="30" end="15" startDist="0" endDist="50"/>
+    <ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="545x39_FMJ_7N22_SD_RGF" unlockCost="2"
+    tooltip="7N22 57gr FMJ"
+    description="@ammo_545x39_FMJ_7N22_RGF_desc"
+    img="data/models/weapons/attachments/m855_ammo_ui.dds">
+
+  <Params roundsPerSecond="10"
+      audibleSoundRadius="3"
+      physicsImpactForce="1.5"
+      damageType="0"
+      silenced="1">
+    <Damage start="30" end="20" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="35" end="17" startDist="0" endDist="60"/>
+    <ArmorPenetration start="6" end="5" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="545x39_FMJ_7N10_SB_RGF"
+    tooltip="7N10 55gr FMJ"
+    description="@ammo_545x39_FMJ_7N10_RGF_desc"
+    img="data/models/weapons/attachments/m855_ammo_ui.dds">
+
+  <Params roundsPerSecond="12"
+      audibleSoundRadius="100"
+      physicsImpactForce="1.5"
+      damageType="0"
+      silenced="0">
+    <Damage start="22" end="19" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="28" end="15" startDist="0" endDist="20"/>
+    <ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="9x18_57N181_RGF"
+    tooltip="57-N-181 92gr FMJ"
+    description="@ammo_57N181_desc"
+    img="data/models/weapons/attachments/m882_ammo_ui.dds">
+
+  <Params	roundsPerSecond="5.5"
+      audibleSoundRadius="50"
+      physicsImpactForce="2.0"
+      damageType="0"
+      silenced="0">
+    <Damage start="18" end="15" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="20" end="0" startDist="0" endDist="80"/>
+    <ArmorPenetration start="3" end="2" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="9x39_7N8ASM_RGF"
+    tooltip="7N8 248gr FMJ"
+    description="@ammo_939FMJ7N8_desc"
+    img="data/models/weapons/attachments/m948_ammo_ui.dds">
+
+  <Params roundsPerSecond="15"
+      audibleSoundRadius="4"
+      physicsImpactForce="3.0"
+      damageType="0"
+      silenced="1">
+    <Damage start="34" end="24" startDist="0" endDist="30"/>
+    <CriticalChancePercent start="28" end="21" startDist="0" endDist="35"/>
+    <ArmorPenetration start="4" end="4" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="762R7N1_SVDRGF"
+    tooltip="7N1 151gr Match Grade"
+    description="@ammo_762R7N1_RGF_desc"
+    img="data/models/weapons/attachments/m80_ammo_ui.dds">
+
+  <Params roundsPerSecond="4"
+      audibleSoundRadius="100"
+      physicsImpactForce="6.0"
+      damageType="0"
+      silenced="0">
+    <Damage start="50" end="40" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="30" end="40" startDist="10" endDist="20"/>
+    <ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="762R57N323_PKMRGF"
+    tooltip="57-N-323 148gr FMJ"
+    description="@ammo_762R57N323RGF_desc"
+    img="data/models/weapons/attachments/m80_ammo_ui.dds">
+
+  <Params	roundsPerSecond="10"
+      audibleSoundRadius="100"
+      physicsImpactForce="8.0"
+      damageType="0"
+      silenced="0">
+    <Damage start="30" end="29" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="15" end="14" startDist="20" endDist="30"/>
+    <ArmorPenetration start="5" end="4" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="9x19_7N21_RGF"
+    tooltip="7N21 80gr AP"
+    description="@ammo_7N21_desc"
+    img="data/models/weapons/attachments/m1152_ammo_ui.dds">
+
+  <Params	roundsPerSecond="14"
+      audibleSoundRadius="50"
+      physicsImpactForce="2.0"
+      damageType="0"
+      silenced="0">
+    <Damage start="21" end="19" startDist="0" endDist="45"/>
+    <CriticalChancePercent start="35" end="20" startDist="0" endDist="30"/>
+    <ArmorPenetration start="5" end="4" startDist="0" endDist="50"/>
+  </Params>
+</Ammo>
+
+<Ammo name="9x19_7N21SD_RGF"
+    tooltip="7N21 80gr AP"
+    description="@ammo_7N21_desc"
+    img="data/models/weapons/attachments/m1152_ammo_ui.dds">
+
+  <Params	roundsPerSecond="14"
+      audibleSoundRadius="8"
+      physicsImpactForce="2.0"
+      damageType="0"
+      silenced="1">
+    <Damage start="21" end="19" startDist="0" endDist="45"/>
+    <CriticalChancePercent start="35" end="20" startDist="0" endDist="30"/>
+    <ArmorPenetration start="5" end="4" startDist="0" endDist="50"/>
+  </Params>
+</Ammo>
+
+</Equipment>
