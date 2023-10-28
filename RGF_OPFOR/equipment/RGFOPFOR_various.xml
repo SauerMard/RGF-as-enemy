@@ -594,7 +594,7 @@
 <Bind eqp="RPOZ_RGF_OPFOR">
 		<to name="338_SniperRifle"/>
 	</Bind>
-	<Firearm name="RPOZ_RGF_OPFOR" inventoryBinding="SupportGear1" category="rpg" unlockCost="4"
+	<Firearm name="RPOZ_RGF_OPFOR" inventoryBinding="SecondaryWeapon" category="rpg" unlockCost="4"
 			tooltip="RPO-Z Launcher"
 			description="@firearm_RPOZ_RGF_desc"
 			img="data/models/weapons/RGF_rpoz_ui.dds"
