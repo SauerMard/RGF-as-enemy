@@ -6,7 +6,7 @@
   <to name="762x39_FMJ_231_RGF"/>
 </Bind>
 <Firearm name="AKM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle"
-    tooltip="AKM (7.62mm / 30 rds)"
+    tooltip="AKM (30 rds)"
     img="data/models/weapons/akm_ui.dds"
     animationSet="rifle"
   >
@@ -74,7 +74,7 @@
   <to name="545x39_FMJ_7N10_RGF"/>
 </Bind>
 <Firearm name="AK74_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
-    tooltip="AK-74M (5.45mm / 30 rds)"
+    tooltip="AK-74M (30 rds)"
     description="@firearm_AK74RGF_desc"
     img="data/models/weapons/RGF_ak74_ui.dds"
     animationSet="rifle"
@@ -144,7 +144,7 @@
   <to name="Kobra_RGF_OPFOR"/>
 </Bind>
 <Firearm name="AK74MR_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
-    tooltip="AK-74MR / Reflex (5.45mm / 30 rds)"
+    tooltip="AK-74MR / Reflex (30 rds)"
     description="@firearm_AK74MRRGF_desc"
     img="data/models/weapons/RGF_ak74mr_ui.dds"
     animationSet="rifle"
@@ -216,7 +216,7 @@
   <to name="PSO39_RG_OPFORF"/>
 </Bind>
 <Firearm name="SVDM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
-    tooltip="SVDM / 3-9x (7.62mmR / 10 rds)"
+    tooltip="SVDM / 3-9x (10 rds)"
     description="@firearm_SVDM_RGF_desc"
     img="data/models/weapons/RGF_svdm_ui.dds"
     animationSet="rifle"
@@ -284,7 +284,7 @@
 		<to name="762R57N323_PKMRGF"/> <!-- probably temporary? -->
 	</Bind>
 	<Firearm name="OPFOR_mosin" inventoryBinding="PrimaryWeapon" category="rifle" 
-			tooltip="Mosin-Nagant (7.62mmR / 5 rds)"
+			tooltip="Mosin-Nagant (5 rds)"
 			img="data/models/weapons/mosin1944_iov_ui.dds"
 			animationSet="rifle"
 		>
@@ -353,7 +353,7 @@
     <to name="holosight_OPFOR"/>
 	</Bind>
 	<Firearm name="AK_105_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
-			tooltip="AK-105 / Holographic (5.45mm / 30 rds)"
+			tooltip="AK-105 / Holographic (30 rds)"
 			description="@firearm_ak105alphacia_desc"
 			img="data/models/weapons/alpha_ak_ui.dds"
 			animationSet="rifle"
@@ -423,7 +423,7 @@
     <to name="holosight_OPFOR"/>
 	</Bind>
 	<Firearm name="AK-105_GRU_HOLO_OPFOR" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
-			tooltip="AK-105 Supp. / Holo (5.45mm / 30 rds)"
+			tooltip="AK-105 Supp. / Holo (30 rds)"
 			description="@firearm_ak105alphaciaSup_desc"
 			img="data/models/weapons/alpha_ak_ui.dds"
 			animationSet="rifle"
@@ -494,7 +494,7 @@
     <to name="LPVO_6X_OPFOR"/>
 	</Bind>
 	<Firearm name="AK-105_GRU_6X_OPFOR" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
-			tooltip="AK-105 Supp. / 1-6x (5.45mm / 30 rds)"
+			tooltip="AK-105 Supp. / 1-6x (30 rds)"
 			description="@firearm_ak105alphaciaSup_desc"
 			img="data/models/weapons/alpha_ak_ui.dds"
 			animationSet="rifle"
@@ -564,7 +564,7 @@
   <to name="545x39_FMJ_7N10_SB_RGF"/>
 </Bind>
 <Firearm name="AKS74U_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="2"
-    tooltip="AKS-74U (5.45mm / 30 rds)"
+    tooltip="AKS-74U (30 rds)"
     description="@firearm_aks74u_RGF_desc"
     img="data/models/weapons/aks74u_ui.dds"
 
@@ -633,7 +633,7 @@
   <to name="PSO1M2_RGF_OPFOR"/>
 </Bind>
 <Firearm name="ASM_RGF_PSO_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
-    tooltip="ASM Val / 4x (9mm / 30 rds)"
+    tooltip="ASM Val / 4x (30 rds)"
     description="@firearm_ASM_RGF_desc"
     img="data/models/weapons/RGF_asmval_ui.dds"
     animationSet="rifle"
@@ -701,8 +701,8 @@
   <to name="9x39_7N8ASM_RGF"/>
   <to name="Kobra_RGF_OPFOR"/>
 </Bind>
-<Firearm name="ASM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
-    tooltip="ASM Val / Reflex (9mm / 30 rds)"
+<Firearm name="ASM_RGF_KOBRA_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+    tooltip="ASM Val / Reflex (30 rds)"
     description="@firearm_ASM_RGF_desc"
     img="data/models/weapons/RGF_asmval_ui.dds"
     animationSet="rifle"
@@ -770,7 +770,7 @@
   <to name="9x19_7N21_RGF"/>
 </Bind>
 <Firearm name="Vityaz_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
-    tooltip="PP-19-01 (9mm / 30 rds)"
+    tooltip="PP-19-01 (30 rds)"
     description="@firearm_pp2k_RGF_desc"
     img="data/models/weapons/RGF_pp19-1_ui.dds"
 
@@ -838,7 +838,7 @@
   <to name="9x19_7N21SD_RGF"/>
 </Bind>
 <Firearm name="Vityaz_OPFOR_SD" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
-    tooltip="PP-19-01 Supp. (9mm / 30 rds)"
+    tooltip="PP-19-01 Supp. (30 rds)"
     description="@firearm_pp2k_RGF_desc"
     img="data/models/weapons/RGF_pp19-1_ui.dds"
 
@@ -909,7 +909,7 @@
   <to name="762x39_FMJ_231_RGF"/>
 </Bind>
 <Firearm name="RPK_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
-    tooltip="RPK (7.62mm / 75 rds)"
+    tooltip="RPK (75 rds)"
     description="@firearm_RPK_RGF_desc"
     img="data/models/weapons/rpk74_drum_ui.dds"
 
@@ -983,7 +983,7 @@
   <to name="545x39_FMJ_7N10_RGF"/>
 </Bind>
 <Firearm name="RPK74_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
-    tooltip="RPK-74M (5.45mm / 45 rds)"
+    tooltip="RPK-74M (45 rds)"
     description="@firearm_RPK74_RGF_desc"
     img="data/models/weapons/RGF_rpk74_ui.dds"
 
@@ -1057,7 +1057,7 @@
   <to name="PKAS_RGF_OPFOR"/>
 </Bind>
 <Firearm name="RPK74_DRUM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
-    tooltip="RPK-74M / Collimator (5.45mm / 95 rds)"
+    tooltip="RPK-74M / Collimator (95 rds)"
     description="@firearm_RPK74_RGF_desc"
     img="data/models/weapons/rpk74_drum_ui.dds"
 
@@ -1130,7 +1130,7 @@
   <to name="762R57N323_PKMRGF"/>
 </Bind>
 <Firearm name="PKM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
-    tooltip="PKM (7.62mmR / 100 rds)"
+    tooltip="PKM (100 rds)"
     description="@firearm_PKM_RGF_desc"
     img="data/models/weapons/RGFpkm_ui.dds"
 
@@ -1204,7 +1204,7 @@
   <to name="9x19_7N21_RGF"/>
 </Bind>
 <Firearm name="MP443_RGF_OPFOR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
-    tooltip="MP-443 (9mm / 17 rds)"
+    tooltip="MP-443 (17 rds)"
     description="@firearm_grach_desc"
     img="data/models/weapons/RGF_mp443_ui.dds"
 
@@ -1272,7 +1272,7 @@
   <to name="9x18_57N181_RGF"/>
 </Bind>
 <Firearm name="Makarov_RGF_OPFOR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
-    tooltip="PM (9mm / 8 rds)"
+    tooltip="PM (8 rds)"
     description="@firearm_PM_pistol_desc"
     img="data/models/weapons/RGF_makarov_ui.dds"
 

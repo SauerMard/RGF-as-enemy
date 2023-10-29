@@ -1,14 +1,6 @@
 <ActionWaypoints>
 	<wp
 		type="THROW_GRENADE"
-		equipment="RGF_RGN_OPFOR"
-		ui_prefix="data/textures/gui_ingame/waypoints/impact_grenade"
-		ttip="Throw impact grenade"
-		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="Out of impact grenades"/>
-
-	<wp
-		type="THROW_GRENADE"
 		equipment="RGF_RGD_OPFOR"
 		ui_prefix="data/textures/gui_ingame/waypoints/frag"
 		ttip="Throw frag grenade"

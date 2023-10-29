@@ -22,6 +22,7 @@
 		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-1"/>
 		<ConcealmentModifier add="-2" />
 		<RenderObject3D model="data/models/humans/attachments/cia_ballistic_helmet.khm" diffuseTex="data/models/humans/attachments/RGF_black_helmet.dds" attachSlot="Bip001 Head">
+		    <Specular shininess="0" intensity="0"/>
 		</RenderObject3D>
 
 		<Params protectionInfoText="@equipment_protect1">
@@ -48,7 +49,9 @@
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
 		<ConcealmentModifier add="0" />
-    <RenderObject3D model="data/models/humans/attachments/6B27.khm" diffuseTex="data/models/humans/attachments/6B27.dds" attachSlot="Bip001 Head"/>
+    <RenderObject3D model="data/models/humans/attachments/6B27.khm" diffuseTex="data/models/humans/attachments/6B27.dds" attachSlot="Bip001 Head">
+	    <Specular shininess="0" intensity="0"/>
+		</RenderObject3D>
 		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
 			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
 		</Params>
@@ -61,7 +64,9 @@
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
 		<ConcealmentModifier add="0" />
-    <RenderObject3D model="data/models/humans/attachments/6B27.khm" diffuseTex="data/models/humans/attachments/RGF_6b27_killer.dds" attachSlot="Bip001 Head"/>
+    <RenderObject3D model="data/models/humans/attachments/6B27.khm" diffuseTex="data/models/humans/attachments/RGF_6b27_killer.dds" attachSlot="Bip001 Head">
+	    <Specular shininess="0" intensity="0"/>
+		</RenderObject3D>
 		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
 			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
 		</Params>
@@ -74,7 +79,9 @@
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
 		<ConcealmentModifier add="0" />
-    <RenderObject3D model="data/models/humans/attachments/6B47.khm" diffuseTex="data/models/humans/attachments/6B47.dds" attachSlot="Bip001 Head"/>
+    <RenderObject3D model="data/models/humans/attachments/6B47.khm" diffuseTex="data/models/humans/attachments/6B47.dds" attachSlot="Bip001 Head">
+	    <Specular shininess="0" intensity="0"/>
+		</RenderObject3D>
 		<Params protectionInfoText="@equipment_protect2">
 			<ProtectionArc degrees="360" coveragePercent="18" piercingProtectionLevel="4"/>
 		</Params>
