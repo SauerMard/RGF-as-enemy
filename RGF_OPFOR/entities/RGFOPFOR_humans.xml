@@ -501,7 +501,7 @@
 			<FOV degrees="120" distanceMeters="999" eyeRadiusMeters="1.5"/>
 			<Brain startingBehavior="Normal Guy" defaultBehavior="Normal Guy" combatBehavior="Suicide Combat" suppressionRecovery="35.0"/>
 			<Traits chanceToAmbush="0.7" usesSuppressionFire="true" ignoresDangerAreas="true"/>
-			<Id name="Commander Keen" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="m_rogue"/>
+			<Id name="Local Commander" portrait="data/textures/portraits/RGF_OPFOR.dds" gender="0" voicePack="m_rogue"/>
 			<Mobility>
 				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10"/>
 				<TurnSpeed min="7.5" defaultMetersPerSec="15" max="23"/>
