@@ -927,7 +927,7 @@
   >
   <MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="-1"/>
   <ConcealmentModifier add="-4" />
-  <RenderObject3D model="data/models/weapons/RGFrpk74.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_rpk74m.dds"/>
+  <RenderObject3D model="data/models/weapons/RGF_DrumRPK.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_DrumRPK74.dds"/>
 
   <ModifiableParams
     numPellets="1"
