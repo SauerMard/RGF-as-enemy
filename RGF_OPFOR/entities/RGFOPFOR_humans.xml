@@ -947,7 +947,7 @@
 	</Entity>
 
     <Entity name="Bodyguard Heavy Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/bodyguard.dds"/>
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_bodyguard.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_Vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>
         <RenderObject3D model="data/models/humans/attachments/kneepads_esp.khm" diffuseTex="data/models/humans/attachments/kneepads_esp.dds"/>			
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
@@ -970,7 +970,7 @@
 	</Entity>
 
     <Entity name="Bodyguard Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
-		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/bodyguard.dds"/>
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_bodyguard.dds"/>
         <RenderObject3D model="data/models/humans/attachments/swat_leader_Vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>
         <RenderObject3D model="data/models/humans/attachments/kneepads_esp.khm" diffuseTex="data/models/humans/attachments/kneepads_esp.dds"/>			
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
