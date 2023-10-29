@@ -925,6 +925,7 @@
 
     <Entity name="Generic Tango 3 Weaponless" type="Human" fogOfWarVisibility="hidden" editorAutoHeight="false" editorTags="enemy">
 		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/RGF_tango.dds">
+        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/RGF_black_vest.dds"/>	
             <Specular shininess="0" intensity="0"/>
         </RenderObject3D>
 		<Breakable template="GenericHumanGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
@@ -941,7 +942,7 @@
 
 			<Equipment>
                  <Item name="CapBodyguard"/>
-                <Item name="armor_6B46_OPFOR"/>
+                 <Item name="armor_6B46_OPFOR"/>
 			</Equipment>
 		</Human>
 	</Entity>
