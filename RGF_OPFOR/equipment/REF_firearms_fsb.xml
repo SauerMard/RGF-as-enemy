@@ -2,7 +2,7 @@
 
 <!--  Rifles -->
 
-<Bind eqp="AK74_RGF_OPFOR">
+<Bind eqp="AK74_Infantry_RGF_OPFOR">
   <to name="545x39_FMJ_7N10_RGF"/>
 </Bind>
 <Firearm name="AK74_Infantry_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
