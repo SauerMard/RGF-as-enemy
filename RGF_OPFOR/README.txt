@@ -1,7 +1,7 @@
-This is v1.0 of the REF mod. Thank you for checking it out.
+This is v1.0.1 of the REF mod. Thank you for checking it out.
 
 Notes for this version:
--Initial release.
+-Small bug fix regarding AK74.
 
 Next version:
 -Desert variant.
