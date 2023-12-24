@@ -1,7 +1,9 @@
-This is v1.0.1 of the REF mod. Thank you for checking it out.
+This is v1.0.2 of the REF mod. Thank you for checking it out.
 
 Notes for this version:
--Small bug fix regarding AK74.
+-Executioner helmet fix.
+-Rabbles got their guns back.
+-Snipers have their SVDs back.
 
 Next version:
 -Desert variant.
