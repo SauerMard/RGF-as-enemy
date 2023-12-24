@@ -29,7 +29,7 @@
 		</Params>
 	</Helmet>
 
-    <Helmet name="hat_VKBO_OPFOR" inventoryBinding="Helmet"
+    <Helmet name="REF_field_hat" inventoryBinding="Helmet"
 			tooltip="VKBO Field Cap"
 			img="data/models/humans/attachments/VKBO_cap_ui.tga"
 		>

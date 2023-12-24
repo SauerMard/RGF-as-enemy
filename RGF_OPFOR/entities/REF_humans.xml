@@ -313,7 +313,7 @@
             </Mobility>
 
             <Equipment>
-                <Item name="REF_svdm"/>
+                <Item name="REF_infantry_svdm"/>
                 <Item name="REF_pso_mpvo"/>
                 <Item name="REF_field_hat"/>
                 <Item name="REF_light_armor"/>
@@ -386,7 +386,7 @@
 
             <Equipment>
                 <Item name="Hunting Shotgun" /> <!-- maybe create a separate one? -->
-                <Item name="hat_VKBO_OPFOR"/>
+                <Item name="REF_field_hat"/>
             </Equipment>
         </Human>
     </Entity>
@@ -409,7 +409,7 @@
 
             <Equipment>
                 <Item name="OPFOR_mosin"/>
-                <Item name="hat_VKBO_OPFOR"/>
+                <Item name="REF_field_hat"/>
             </Equipment>
         </Human>
     </Entity>
@@ -432,7 +432,7 @@
 
             <Equipment>
                 <Item name="Makarov_RGF_OPFOR"/>
-                <Item name="hat_VKBO_OPFOR"/>
+                <Item name="REF_field_hat"/>
             </Equipment>
         </Human>
     </Entity>
@@ -1121,7 +1121,7 @@
             </Mobility>
 
             <Equipment>
-                <Item name="hat_VKBO_OPFOR"/>
+                <Item name="REF_field_hat"/>
             </Equipment>
         </Human>
     </Entity>
@@ -1143,7 +1143,7 @@
             </Mobility>
 
             <Equipment>
-                <Item name="hat_VKBO_OPFOR"/>
+                <Item name="REF_field_hat"/>
             </Equipment>
         </Human>
     </Entity>

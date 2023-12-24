@@ -1,5 +1,37 @@
 <Equipment>
 
+<Ammo name="9x39_7N8ASM_RGF"
+    tooltip="7N8 248gr FMJ"
+    description="@ammo_939FMJ7N8_desc"
+    img="data/models/weapons/attachments/m948_ammo_ui.dds">
+
+  <Params roundsPerSecond="15"
+      audibleSoundRadius="4"
+      physicsImpactForce="3.0"
+      damageType="0"
+      silenced="1">
+    <Damage start="34" end="24" startDist="0" endDist="30"/>
+    <CriticalChancePercent start="28" end="21" startDist="0" endDist="35"/>
+    <ArmorPenetration start="4" end="4" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
+<Ammo name="762x39_FMJ_231_RGF"
+    tooltip="57-N-231 122gr FMJ"
+    description="@ammo_762x39_FMJ_231_RGF_desc"
+    img="data/models/weapons/attachments/m855_ammo_ui.dds">
+
+  <Params roundsPerSecond="10"
+      audibleSoundRadius="100"
+      physicsImpactForce="1.5"
+      damageType="0"
+      silenced="0">
+    <Damage start="23" end="19" startDist="0" endDist="100"/>
+    <CriticalChancePercent start="10" end="0" startDist="0" endDist="40"/>
+    <ArmorPenetration start="5" end="2" startDist="0" endDist="100"/>
+  </Params>
+</Ammo>
+
 <Ammo name="REF_ak74m_7n10"
     tooltip="7N10 55gr FMJ"
     description="@ammo_545x39_FMJ_7N10_RGF_desc"
