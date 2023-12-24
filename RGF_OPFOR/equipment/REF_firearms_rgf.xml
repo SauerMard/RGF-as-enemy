@@ -495,10 +495,10 @@
   </Sounds>
 </Firearm>
 
-<Bind eqp="PKM_RGF_OPFOR">
+<Bind eqp="REF_pkm">
   <to name="762R57N323_PKMRGF"/>
 </Bind>
-<Firearm name="PKM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+<Firearm name="REF_pkm" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
     tooltip="PKM (100 rds)"
     description="@firearm_PKM_RGF_desc"
     img="data/models/weapons/RGFpkm_ui.dds"
@@ -572,7 +572,7 @@
   <to name="762R7N1_SVDRGF"/>
   <to name="PSO39_RG_OPFORF"/>
 </Bind>
-<Firearm name="SVDM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
+<Firearm name="REF_infantry_svdm" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
     tooltip="SVDM / 3-9x (10 rds)"
     description="@firearm_SVDM_RGF_desc"
     img="data/models/weapons/RGF_svdm_ui.dds"
@@ -1337,10 +1337,10 @@
   </Sounds>
 </Firearm>
 
-<Bind eqp="AKM_RGF_OPFOR">
+<Bind eqp="REF_akm">
   <to name="762x39_FMJ_231_RGF"/>
 </Bind>
-<Firearm name="AKM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle"
+<Firearm name="REF_akm" inventoryBinding="PrimaryWeapon" category="rifle"
     tooltip="AKM (30 rds)"
     img="data/models/weapons/akm_ui.dds"
     animationSet="rifle"
@@ -1381,10 +1381,9 @@
   />
 
   <AttackTypes>
-    <AttackType name="RGF_CloseAutoFire" rangeMeters="8"/>
-    <AttackType name="RGF_MidAutoFire" rangeMeters="14"/>
-    <AttackType name="RGF_AimedSemi" rangeMeters="40"/>
-    <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+    <AttackType name="REF_MagDump" rangeMeters="4"/>
+    <AttackType name="REF_CloseAutoFireRabble" rangeMeters="18"/>
+    <AttackType name="REF_MidAutoFireRabble" rangeMeters="40"/>
   </AttackTypes>
 
   <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">

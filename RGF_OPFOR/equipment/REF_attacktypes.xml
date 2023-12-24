@@ -13,6 +13,19 @@
     />
   </AttackType>
 
+  <AttackType name="REF_CloseAutoFireRabble">
+    <ModifiableParams
+      minAimTime="550"
+      maxAimTime="600"
+      minShots="2"
+      maxShots="6"
+      resetTime="600"
+      accuracyAdd="-120"
+      followupShotAccuracyAdd="-50"
+      critChanceAdd="-5"
+    />
+  </AttackType>
+
   <AttackType name="REF_CloseAutoFire">
     <ModifiableParams
       minAimTime="350"
@@ -35,6 +48,19 @@
       resetTime="500"
       accuracyAdd="-140"
       followupShotAccuracyAdd="-10"
+      critChanceAdd="-5"
+    />
+  </AttackType>
+
+  <AttackType name="REF_MidAutoFireRabble">
+    <ModifiableParams
+      minAimTime="600"
+      maxAimTime="800"
+      minShots="2"
+      maxShots="3"
+      resetTime="600"
+      accuracyAdd="-140"
+      followupShotAccuracyAdd="-50"
       critChanceAdd="-5"
     />
   </AttackType>
