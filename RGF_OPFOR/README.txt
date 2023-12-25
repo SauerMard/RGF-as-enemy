@@ -4,6 +4,7 @@ Notes for this version:
 -Executioner helmet fix.
 -Rabbles got their guns back.
 -Snipers have their SVDs back.
+-Fixed caps.
 
 Next version:
 -Desert variant.
