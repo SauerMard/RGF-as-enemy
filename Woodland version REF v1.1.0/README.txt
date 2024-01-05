@@ -1,13 +1,9 @@
-This is v1.0.2 of the REF mod. Thank you for checking it out.
+This is v1.1.0 of the REF mod, woodland version. Thank you for checking it out.
 
 Notes for this version:
--Executioner helmet fix.
--Rabbles got their guns back.
--Snipers have their SVDs back.
--Fixed caps.
+-Arid version released.
 
 Next version:
--Desert variant.
 -Further balancing.
 -Trimming down the file size.
 

@@ -1,0 +1,1339 @@
+<Equipment>
+
+<!--  Rifles -->
+
+<Bind eqp="AK74_Infantry_RGF_OPFOR">
+  <to name="545x39_FMJ_7N10_RGF"/>
+</Bind>
+<Firearm name="AK74_Infantry_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
+    tooltip="AK-74M (30 rds)"
+    description="@firearm_AK74RGF_desc"
+    img="data/models/weapons/RGF_ak74_ui.dds"
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-1"/>
+  <ConcealmentModifier add="-3"/>
+  <RenderObject3D model="data/models/weapons/RGFakm.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_ak74.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2000"
+    reloadEmptyTime="3000"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="380"
+    guardTime="200"
+
+    accuracyStart="200"
+    accuracyEnd="150"
+    accuracyStartDist="0"
+    accuracyEndDist="100"
+
+    suppressionScale="1"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_545x39_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="aks_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="15.0"
+    ai_rangeMax="45.0"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="8"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="14"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="40"/>
+    <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="aks74u_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="AK74MR_RGF_OPFOR">
+  <to name="545x39_FMJ_7N10_RGF"/>
+  <to name="Kobra_RGF_OPFOR"/>
+</Bind>
+<Firearm name="AK74MR_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+    tooltip="AK-74MR / Reflex (30 rds)"
+    description="@firearm_AK74MRRGF_desc"
+    img="data/models/weapons/RGF_ak74mr_ui.dds"
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-1"/>
+  <ConcealmentModifier add="-3"/>
+  <RenderObject3D model="data/models/weapons/RGF_AK74MR.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_Obves.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2000"
+    reloadEmptyTime="2750"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="320"
+    guardTime="150"
+
+    accuracyStart="200"
+    accuracyEnd="150"
+    accuracyStartDist="0"
+    accuracyEndDist="100"
+
+    suppressionScale="1.09"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_545x39_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="aks_mag"
+    suppressedSwitch="AK74MRsup_RGF"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="15.0"
+    ai_rangeMax="45.0"
+    hasLaser="true"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="12"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="60"/>
+    <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="aks74u_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="SVDM_RGF_OPFOR">
+  <to name="762R7N1_SVDRGF"/>
+  <to name="PSO39_RG_OPFORF"/>
+</Bind>
+<Firearm name="SVDM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
+    tooltip="SVDM / 3-9x (10 rds)"
+    description="@firearm_SVDM_RGF_desc"
+    img="data/models/weapons/RGF_svdm_ui.dds"
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="-2"/>
+  <ConcealmentModifier add="-4" />
+  <RenderObject3D model="data/models/weapons/RGF_SVDM.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_SVDM.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="10"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="3400"
+    reloadEmptyTime="3800"
+    changeInTime="1000"
+    changeOutTime="1000"
+    readyTime="600"
+    guardTime="600"
+
+    accuracyStart="350"
+    accuracyEnd="250"
+    accuracyStartDist="10"
+    accuracyEndDist="80"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_762x54_name"
+    operationInfoText="@firearm_operation_semiauto_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="dragunov_mag"
+    suppressedSwitch="SVDMsup_RGF"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="30.0"
+    ai_rangeMax="100.0"
+    hasLaser="true"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_DMR_Fast"  inCoverOverride="RGF_DMR_Fast_Mounted" rangeMeters="12"/>
+    <AttackType name="RGF_DMR_Aimed"  inCoverOverride="RGF_DMR_Aimed_Mounted" rangeMeters="48"/>
+    <AttackType name="RGF_DMR_AimedXX"  inCoverOverride="RGF_DMR_AimedXX_Mounted" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="pkm_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="OPFOR_mosin">
+		<to name="762R57N323_PKMRGF"/> <!-- probably temporary? -->
+	</Bind>
+	<Firearm name="OPFOR_mosin" inventoryBinding="PrimaryWeapon" category="rifle"
+			tooltip="Mosin-Nagant (5 rds)"
+			img="data/models/weapons/mosin1944_iov_ui.dds"
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-8" turnSpeedModifierPercent="-1"/>
+		<RenderObject3D model="data/models/weapons/mosin1944_iov.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mosin1944pu_iov.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="10"
+			closedBolt="0"
+
+			cyclicReload="0"
+			reloadTime="2500"
+			reloadEmptyTime="2500"
+			changeInTime="1500"
+			changeOutTime="1500"
+			readyTime="750"
+			guardTime="450"
+
+			accuracyStart="110"
+			accuracyEnd="60"
+			accuracyStartDist="5"
+			accuracyEndDist="100"
+			suppressionScale="1.2"
+
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_303_name"
+			operationInfoText="@firearm_operation_boltaction_name"
+			ejectingShellEntity="BulletCasingLarge"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="20.0"
+			ai_rangeMax="70.0"
+			ai_stopWhenShooting="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="SVD_TooClose" rangeMeters="4"/>
+			<AttackType name="SVD_AimedFire" rangeMeters="35"/>
+			<AttackType name="SVD_AimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="smle_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+<!-- Carbines n SMGs -->
+
+<Bind eqp="AK_105_OPFOR">
+	  <to name="545x39_FMJ_7N10_SB_RGF"/>
+    <to name="holosight_OPFOR"/>
+	</Bind>
+	<Firearm name="AK_105_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+			tooltip="AK-105 / Holographic (30 rds)"
+			description="@firearm_ak105alphacia_desc"
+			img="data/models/weapons/alpha_ak_ui.dds"
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="-3"/>
+		<RenderObject3D model="data/models/weapons/alpha_ak.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_ak_105.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="45"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2000"
+			reloadEmptyTime="2700"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="400"
+			guardTime="200"
+
+			accuracyStart="170"
+			accuracyEnd="80"
+			accuracyStartDist="0"
+			accuracyEndDist="70"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_545x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="rpk74_mag"
+			suppressedSwitch="AK 105 Alpha Sup CIA BOps"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="20.0"
+			ai_rangeMax="40.0"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="RGF_CloseAutoFire" rangeMeters="10"/>
+      <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
+      <AttackType name="RGF_AimedSemi" rangeMeters="50"/>
+      <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="aks103_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+  </Firearm>
+
+  <Bind eqp="AK-105_GRU_HOLO_OPFOR">
+		<to name="545x39_FMJ_7N22_SD_RGF"/>
+    <to name="holosight_OPFOR"/>
+	</Bind>
+	<Firearm name="AK-105_GRU_HOLO_OPFOR" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+			tooltip="AK-105 Supp. / Holo (30 rds)"
+			description="@firearm_ak105alphaciaSup_desc"
+			img="data/models/weapons/alpha_ak_ui.dds"
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="-4"/>
+		<RenderObject3D model="data/models/weapons/alpha_ak.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_ak_105.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01b.dds"/>
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2200"
+			reloadEmptyTime="2900"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="460"
+			guardTime="220"
+
+			accuracyStart="170"
+			accuracyEnd="80"
+			accuracyStartDist="0"
+			accuracyEndDist="70"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_545x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="aks_mag"
+			suppressedSwitch="AK 105 Alpha CIA BOps"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="20.0"
+			ai_rangeMax="40.0"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="RGF_CloseAutoFire" rangeMeters="10"/>
+      <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
+      <AttackType name="RGF_AimedSemi" rangeMeters="50"/>
+      <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="aks103sup_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+<Bind eqp="AK-105_GRU_6X_OPFOR">
+		<to name="545x39_FMJ_7N22_SD_RGF"/>
+    <to name="LPVO_6X_OPFOR"/>
+	</Bind>
+	<Firearm name="AK-105_GRU_6X_OPFOR" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
+			tooltip="AK-105 Supp. / 1-6x (30 rds)"
+			description="@firearm_ak105alphaciaSup_desc"
+			img="data/models/weapons/alpha_ak_ui.dds"
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="-4"/>
+		<RenderObject3D model="data/models/weapons/alpha_ak.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_ak_105.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01b.dds"/>
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2200"
+			reloadEmptyTime="2900"
+			changeInTime="0"
+			changeOutTime="0"
+			readyTime="460"
+			guardTime="220"
+
+			accuracyStart="170"
+			accuracyEnd="80"
+			accuracyStartDist="0"
+			accuracyEndDist="70"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_545x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="aks_mag"
+			suppressedSwitch="AK 105 Alpha CIA BOps"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="20.0"
+			ai_rangeMax="40.0"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="RGF_CloseAutoFire" rangeMeters="10"/>
+      <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
+      <AttackType name="RGF_AimedSemi" rangeMeters="50"/>
+      <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="aks103sup_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+<Bind eqp="AKS74U_RGF_OPFOR">
+  <to name="545x39_FMJ_7N10_SB_RGF"/>
+</Bind>
+<Firearm name="AKS74U_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="2"
+    tooltip="AKS-74U (30 rds)"
+    description="@firearm_aks74u_RGF_desc"
+    img="data/models/weapons/aks74u_ui.dds"
+
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+  <ConcealmentModifier add="-2"/>
+  <RenderObject3D model="data/models/weapons/AKS_74U.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/AKS_74U.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2000"
+    reloadEmptyTime="3000"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="380"
+    guardTime="200"
+
+    accuracyStart="200"
+    accuracyEnd="100"
+    accuracyStartDist="0"
+    accuracyEndDist="60"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_545x39_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="aks_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="15.0"
+    ai_rangeMax="25.0"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="6"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="10"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="35"/>
+    <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="aks74u_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="ASM_RGF_PSO_OPFOR">
+  <to name="9x39_7N8ASM_RGF"/>
+  <to name="PSO1M2_RGF_OPFOR"/>
+</Bind>
+<Firearm name="ASM_RGF_PSO_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+    tooltip="ASM Val / 4x (30 rds)"
+    description="@firearm_ASM_RGF_desc"
+    img="data/models/weapons/RGF_asmval_ui.dds"
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="0"/>
+  <ConcealmentModifier add="-3" />
+  <RenderObject3D model="data/models/weapons/RGF_ASMVal.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/sr3m.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2100"
+    reloadEmptyTime="3300"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="460"
+    guardTime="300"
+
+    accuracyStart="200"
+    accuracyEnd="120"
+    accuracyStartDist="0"
+    accuracyEndDist="45"
+  />
+
+  <Params
+    caliberInfoText="9x39mm"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="dragunov_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="25.0"
+    ai_rangeMax="100.0"
+    hasLaser="true"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="8"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="35"/>
+    <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="vss_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="ASM_RGF_KOBRA_OPFOR">
+  <to name="9x39_7N8ASM_RGF"/>
+  <to name="Kobra_RGF_OPFOR"/>
+</Bind>
+<Firearm name="ASM_RGF_KOBRA_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
+    tooltip="ASM Val / Reflex (30 rds)"
+    description="@firearm_ASM_RGF_desc"
+    img="data/models/weapons/RGF_asmval_ui.dds"
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="0"/>
+  <ConcealmentModifier add="-3" />
+  <RenderObject3D model="data/models/weapons/RGF_ASMVal.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/sr3m.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2100"
+    reloadEmptyTime="3300"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="460"
+    guardTime="300"
+
+    accuracyStart="200"
+    accuracyEnd="120"
+    accuracyStartDist="0"
+    accuracyEndDist="45"
+  />
+
+  <Params
+    caliberInfoText="9x39mm"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="dragunov_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="25.0"
+    ai_rangeMax="100.0"
+    hasLaser="true"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="8"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="35"/>
+    <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="vss_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="Vityaz_OPFOR">
+  <to name="9x19_7N21_RGF"/>
+</Bind>
+<Firearm name="Vityaz_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
+    tooltip="PP-19-01 (30 rds)"
+    description="@firearm_pp2k_RGF_desc"
+    img="data/models/weapons/RGF_pp19-1_ui.dds"
+
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+  <ConcealmentModifier add="-2"/>
+  <RenderObject3D model="data/models/weapons/RGF_Vityaz.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_Vityaz.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2700"
+    reloadEmptyTime="2700"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="350"
+		guardTime="160"
+
+    accuracyStart="200"
+    accuracyEnd="100"
+    accuracyStartDist="0"
+    accuracyEndDist="60"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_9x19_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingSmall"
+    magazineEntity="mp5_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="15.0"
+    ai_rangeMax="25.0"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="6"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="10"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="35"/>
+    <AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+    <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+			<Equip name="smg_eqp"/>
+			<Unequip name="smg_neqp"/>
+			<Reload name="smg_reld"/>
+			<ReloadEmpty name="smg_reldempt"/>
+			<Fire name="mp5a_fire"/>
+			<ShellDrop name="smg_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+</Firearm>
+
+<Bind eqp="Vityaz_OPFOR_SD">
+  <to name="9x19_7N21SD_RGF"/>
+</Bind>
+<Firearm name="Vityaz_OPFOR_SD" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
+    tooltip="PP-19-01 Supp. (30 rds)"
+    description="@firearm_pp2k_RGF_desc"
+    img="data/models/weapons/RGF_pp19-1_ui.dds"
+
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+  <ConcealmentModifier add="-2"/>
+  <RenderObject3D model="data/models/weapons/RGF_Vityaz.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_Vityaz.dds"/>
+  <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2700"
+    reloadEmptyTime="2700"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="350"
+		guardTime="160"
+
+    accuracyStart="200"
+    accuracyEnd="100"
+    accuracyStartDist="0"
+    accuracyEndDist="60"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_9x19_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingSmall"
+    magazineEntity="mp5_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="15.0"
+    ai_rangeMax="25.0"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="6"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="10"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="35"/>
+    <AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+      <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+			<Equip name="smg_eqp"/>
+			<Unequip name="smg_neqp"/>
+			<Reload name="smg_reld"/>
+			<ReloadEmpty name="smg_reldempt"/>
+			<Fire name="m9sup_fire"/>
+			<ShellDrop name="smg_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+</Firearm>
+
+<!-- MGs -->
+
+<Bind eqp="RPK_RGF_OPFOR">
+  <to name="762x39_FMJ_231_RGF"/>
+</Bind>
+<Firearm name="RPK_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
+    tooltip="RPK (75 rds)"
+    description="@firearm_RPK_RGF_desc"
+    img="data/models/weapons/rpk74_drum_ui.dds"
+
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-11" turnSpeedModifierPercent="-1"/>
+  <ConcealmentModifier add="-4" />
+  <RenderObject3D model="data/models/weapons/RGF_DrumRPK.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_DrumRPK.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="75"
+    closedBolt="1"
+    suppressArea="1"
+
+    cyclicReload="0"
+    reloadTime="3000"
+    reloadEmptyTime="3500"
+    changeInTime="800"
+    changeOutTime="800"
+    readyTime="580"
+    guardTime="250"
+
+    accuracyStart="120"
+    accuracyEnd="80"
+    accuracyStartDist="0"
+    accuracyEndDist="50"
+
+    suppressionScale="1.2"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_762x39_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="rpk74_mag"
+    suppressedSwitch="RPKSup_RGF"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="18.0"
+    ai_rangeMax="40.0"
+    ai_stopWhenShooting="true"
+    hasLaser="false"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_LMG_Shortwalk" inCoverOverride="RGF_LMG_Mounted_Shortwalk" rangeMeters="7"/>
+    <AttackType name="RGF_LMG_Longwalk" inCoverOverride="RGF_LMG_Mounted_Longwalk" rangeMeters="28"/>
+    <AttackType name="RGF_LMG_Plink" inCoverOverride="RGF_LMG_Mounted_Plink" rangeMeters="44"/>
+    <AttackType name="RGF_LMG_PlinkXX" inCoverOverride="RGF_LMG_Mounted_PlinkXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_LMG">
+    <Flare particles="FX_MUZZLE_FLASH_LMG_01" />
+    <Flare particles="FX_MUZZLE_FLASH_LMG_02" />
+    <Flare particles="FX_MUZZLE_FLASH_LMG_03" />
+    <Flare particles="FX_MUZZLE_FLASH_LMG_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="rpk74_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="RPK74_RGF_OPFOR">
+  <to name="545x39_FMJ_7N10_RGF"/>
+</Bind>
+<Firearm name="RPK74_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
+    tooltip="RPK-74M (45 rds)"
+    description="@firearm_RPK74_RGF_desc"
+    img="data/models/weapons/RGF_rpk74_ui.dds"
+
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="-1"/>
+  <ConcealmentModifier add="-4" />
+  <RenderObject3D model="data/models/weapons/RGFrpk74.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_rpk74m.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="45"
+    closedBolt="1"
+    suppressArea="1"
+
+    cyclicReload="0"
+    reloadTime="2900"
+    reloadEmptyTime="3300"
+    changeInTime="750"
+    changeOutTime="750"
+    readyTime="520"
+    guardTime="250"
+
+    accuracyStart="140"
+    accuracyEnd="100"
+    accuracyStartDist="0"
+    accuracyEndDist="60"
+
+    suppressionScale="1.2"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_545x39_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="rpk74_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="18.0"
+    ai_rangeMax="40.0"
+    ai_stopWhenShooting="true"
+    hasLaser="false"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_LMG_Shortwalk" inCoverOverride="RGF_LMG_Mounted_Shortwalk" rangeMeters="10"/>
+    <AttackType name="RGF_LMG_Longwalk" inCoverOverride="RGF_LMG_Mounted_Longwalk" rangeMeters="32"/>
+    <AttackType name="RGF_LMG_Plink" inCoverOverride="RGF_LMG_Mounted_Plink" rangeMeters="44"/>
+    <AttackType name="RGF_LMG_PlinkXX" inCoverOverride="RGF_LMG_Mounted_PlinkXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_LMG">
+    <Flare particles="FX_MUZZLE_FLASH_LMG_01" />
+    <Flare particles="FX_MUZZLE_FLASH_LMG_02" />
+    <Flare particles="FX_MUZZLE_FLASH_LMG_03" />
+    <Flare particles="FX_MUZZLE_FLASH_LMG_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="rpk74_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="RPK74_DRUM_RGF_OPFOR">
+  <to name="545x39_FMJ_7N10_RGF"/>
+  <to name="PKAS_RGF_OPFOR"/>
+</Bind>
+<Firearm name="RPK74_DRUM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
+    tooltip="RPK-74M / Collimator (95 rds)"
+    description="@firearm_RPK74_RGF_desc"
+    img="data/models/weapons/rpk74_drum_ui.dds"
+
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-7" turnSpeedModifierPercent="-1"/>
+  <ConcealmentModifier add="-4" />
+  <RenderObject3D model="data/models/weapons/RGF_DrumRPK.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/RGF_DrumRPK74.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="95"
+    closedBolt="1"
+    suppressArea="1"
+
+    cyclicReload="0"
+    reloadTime="2900"
+    reloadEmptyTime="3300"
+    changeInTime="750"
+    changeOutTime="750"
+    readyTime="520"
+    guardTime="250"
+
+    accuracyStart="140"
+    accuracyEnd="100"
+    accuracyStartDist="0"
+    accuracyEndDist="60"
+
+    suppressionScale="1.2"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_545x39_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="rpk74_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="18.0"
+    ai_rangeMax="40.0"
+    ai_stopWhenShooting="true"
+    hasLaser="false"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_LMG_Shortwalk" inCoverOverride="RGF_LMG_Mounted_Shortwalk" rangeMeters="10"/>
+    <AttackType name="RGF_LMG_Longwalk" inCoverOverride="RGF_LMG_Mounted_Longwalk" rangeMeters="32"/>
+    <AttackType name="RGF_LMG_Plink" inCoverOverride="RGF_LMG_Mounted_Plink" rangeMeters="44"/>
+    <AttackType name="RGF_LMG_PlinkXX" inCoverOverride="RGF_LMG_Mounted_PlinkXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_LMG">
+    <Flare particles="FX_MUZZLE_FLASH_LMG_01" />
+    <Flare particles="FX_MUZZLE_FLASH_LMG_02" />
+    <Flare particles="FX_MUZZLE_FLASH_LMG_03" />
+    <Flare particles="FX_MUZZLE_FLASH_LMG_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="rpk74_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="PKM_RGF_OPFOR">
+  <to name="762R57N323_PKMRGF"/>
+</Bind>
+<Firearm name="PKM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
+    tooltip="PKM (100 rds)"
+    description="@firearm_PKM_RGF_desc"
+    img="data/models/weapons/RGFpkm_ui.dds"
+
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-16" turnSpeedModifierPercent="-10"/>
+  <RenderObject3D model="data/models/weapons/RGF_pkm.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/pkp.dds"/>
+  <ConcealmentModifier add="-4"/>
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="100"
+    closedBolt="0"
+    suppressArea="1"
+
+    cyclicReload="0"
+    reloadTime="6000"
+    reloadEmptyTime="6000"
+    changeInTime="950"
+    changeOutTime="950"
+    readyTime="800"
+    guardTime="400"
+
+    accuracyStart="120"
+    accuracyEnd="80"
+    accuracyStartDist="0"
+    accuracyEndDist="60"
+
+    suppressionScale="1.4"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_762x54_name"
+    operationInfoText="@firearm_operation_fullauto_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="m240l_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="20.0"
+    ai_rangeMax="50.0"
+    ai_stopWhenShooting="true"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_LMG_Shortwalk" inCoverOverride="RGF_LMG_Mounted_Shortwalk" rangeMeters="4"/>
+    <AttackType name="RGF_LMG_Longwalk" inCoverOverride="RGF_LMG_Mounted_Longwalk" rangeMeters="8"/>
+    <AttackType name="RGF_GPMG_Walk" inCoverOverride="RGF_LMG_Mounted_Longwalk" rangeMeters="26"/>
+    <AttackType name="RGF_LMG_Plink" inCoverOverride="RGF_LMG_Mounted_Plink" rangeMeters="55"/>
+    <AttackType name="RGF_LMG_PlinkXX" inCoverOverride="RGF_LMG_Mounted_PlinkXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_LMG">
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="pkm_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<!-- Pistols -->
+
+<Bind eqp="MP443_RGF_OPFOR">
+  <to name="9x19_7N21_RGF"/>
+</Bind>
+<Firearm name="MP443_RGF_OPFOR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
+    tooltip="MP-443 (17 rds)"
+    description="@firearm_grach_desc"
+    img="data/models/weapons/RGF_mp443_ui.dds"
+
+    animationSet="pistol"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-2.3" turnSpeedModifierPercent="0"/>
+  <RenderObject3D model="data/models/weapons/m17.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/RGF_MP443.dds" skipGOSSAO="true"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="17"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="1300"
+    reloadEmptyTime="1500"
+    changeInTime="800"
+    changeOutTime="900"
+    readyTime="100"
+    guardTime="50"
+
+    accuracyStart="80"
+    accuracyEnd="75"
+    accuracyStartDist="0"
+    accuracyEndDist="100"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_9x19_name"
+    operationInfoText="@firearm_operation_semiauto_name"
+    ejectingShellEntity="BulletCasingSmall"
+    magazineEntity="pm63_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="3.0"
+    ai_rangeMax="15.0"
+    ai_stopWhenShooting="false"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_PistolRapid" rangeMeters="8" priority="0"/>
+    <AttackType name="RGF_PistolAimed" rangeMeters="13"/>
+    <AttackType name="RGF_PistolLong" rangeMeters="25"/>
+    <AttackType name="RGF_PistolXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+    <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+    <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+    <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+    <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="pistol_eqp"/>
+    <Unequip name="pistol_neqp"/>
+    <Reload name="pistol_reld"/>
+    <ReloadEmpty name="pistol_reldempt"/>
+    <Fire name="g22_fire"/>
+    <ShellDrop name="pistol_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="Makarov_RGF_OPFOR">
+  <to name="9x18_57N181_RGF"/>
+</Bind>
+<Firearm name="Makarov_RGF_OPFOR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
+    tooltip="PM (8 rds)"
+    description="@firearm_PM_pistol_desc"
+    img="data/models/weapons/RGF_makarov_ui.dds"
+
+    animationSet="pistol"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+  <RenderObject3D model="data/models/weapons/1911.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/1911_02.dds" skipGOSSAO="true"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="8"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="1400"
+    reloadEmptyTime="1600"
+    changeInTime="800"
+    changeOutTime="1000"
+    readyTime="80"
+    guardTime="50"
+
+    accuracyStart="85"
+    accuracyEnd="40"
+    accuracyStartDist="0"
+    accuracyEndDist="50"
+  />
+
+  <Params
+    caliberInfoText="9x18mm"
+    operationInfoText="@firearm_operation_semiauto_name"
+    ejectingShellEntity="BulletCasingSmall"
+    magazineEntity="pm63_mag"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="3.0"
+    ai_rangeMax="15.0"
+    ai_stopWhenShooting="false"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_PistolRapid" rangeMeters="4" priority="0"/>
+    <AttackType name="RGF_PistolAimed" rangeMeters="8"/>
+    <AttackType name="RGF_PistolLong" rangeMeters="18"/>
+    <AttackType name="RGF_PistolXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+    <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+    <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+    <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+    <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="pistol_eqp"/>
+    <Unequip name="pistol_neqp"/>
+    <Reload name="pistol_reld"/>
+    <ReloadEmpty name="pistol_reldempt"/>
+    <Fire name="g19_fire"/>
+    <ShellDrop name="pistol_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+<Bind eqp="AKM_RGF_OPFOR">
+  <to name="762x39_FMJ_231_RGF"/>
+</Bind>
+<Firearm name="AKM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle"
+    tooltip="AKM (30 rds)"
+    img="data/models/weapons/akm_ui.dds"
+    animationSet="rifle"
+  >
+  <MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-1"/>
+  <RenderObject3D model="data/models/weapons/RGFakm.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/akm.dds"/>
+
+  <ModifiableParams
+    numPellets="1"
+    roundsPerMagazine="30"
+    closedBolt="1"
+
+    cyclicReload="0"
+    reloadTime="2300"
+    reloadEmptyTime="3500"
+    changeInTime="0"
+    changeOutTime="0"
+    readyTime="450"
+    guardTime="200"
+
+    accuracyStart="180"
+    accuracyEnd="120"
+    accuracyStartDist="0"
+    accuracyEndDist="100"
+
+    suppressionScale="1.09"
+  />
+
+  <Params
+    caliberInfoText="@firearm_caliber_762x39_name"
+    operationInfoText="@firearm_operation_semifull_name"
+    ejectingShellEntity="BulletCasingLarge"
+    magazineEntity="type56_mag"
+    suppressedSwitch="AKM_RGFsup"
+    ai_rangeMin="1.0"
+    ai_rangeOptimal="15.0"
+    ai_rangeMax="45.0"
+  />
+
+  <AttackTypes>
+    <AttackType name="RGF_CloseAutoFire" rangeMeters="8"/>
+    <AttackType name="RGF_MidAutoFire" rangeMeters="14"/>
+    <AttackType name="RGF_AimedSemi" rangeMeters="40"/>
+    <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+  </AttackTypes>
+
+  <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+    <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+  </MuzzleFlash>
+
+  <Sounds> <!-- max 4 variants for each action -->
+    <Equip name="rifle_eqp"/>
+    <Unequip name="rifle_neqp"/>
+    <Reload name="rifle_reld"/>
+    <ReloadEmpty name="rifle_reldempt"/>
+    <Fire name="type56_fire"/>
+    <ShellDrop name="rifle_shell_drop"/>
+    <Empty name="gen_empty"/>
+  </Sounds>
+</Firearm>
+
+</Equipment>

@@ -1,0 +1,131 @@
+<Equipment>
+
+	<Helmet name="CapBodyguard" inventoryBinding="Helmet"
+			tooltip="Baseball Cap"
+			description="@helmet_CIA_basiccap_desc"
+			img="data/models/humans/attachments/cia_cap_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="3" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="0" />
+		<RenderObject3D model="data/models/humans/attachments/cia_cap.khm" diffuseTex="data/models/humans/attachments/RGF_black_hat.dds" attachSlot="Bip001 Head"/>
+		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0"/>
+		</Params>
+	</Helmet>
+
+	<Helmet name="FAST_OPFOR" inventoryBinding="Helmet"
+			tooltip="High Cut Helmet"
+			description="@helmet_CIA_fast_desc"
+			img="data/models/humans/attachments/ranger_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-1"/>
+		<ConcealmentModifier add="-2" />
+		<RenderObject3D model="data/models/humans/attachments/cia_ballistic_helmet.khm" diffuseTex="data/models/humans/attachments/RGF_black_helmet.dds" attachSlot="Bip001 Head">
+		    <Specular shininess="0" intensity="0"/>
+		</RenderObject3D>
+
+		<Params protectionInfoText="@equipment_protect1">
+			<ProtectionArc degrees="360" coveragePercent="10" piercingProtectionLevel="4"/>
+		</Params>
+	</Helmet>
+
+    <Helmet name="REF_field_hat" inventoryBinding="Helmet"
+			tooltip="VKBO Field Cap"
+			img="data/models/humans/attachments/VKBO_cap_ui.tga"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="0" />
+        <RenderObject3D model="data/models/humans/attachments/VKBO_cap.khm" diffuseTex="data/models/humans/attachments/VKBO_cap.dds" attachSlot="Bip001 Head"/>
+		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="1"/>
+		</Params>
+	</Helmet>
+
+	<Helmet name="REF_infantry_helmet" inventoryBinding="Helmet"
+			tooltip="6B27 Helmet"
+			description="Infantry Helmet"
+			img="data/models/humans/attachments/REF_infantry_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="0" />
+    <RenderObject3D model="data/models/humans/attachments/REF_infantry_helmet.khm" diffuseTex="data/models/humans/attachments/REF_infantry_helmet.dds" attachSlot="Bip001 Head">
+	    <Specular shininess="0" intensity="0"/>
+		</RenderObject3D>
+		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
+			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
+		</Params>
+	</Helmet>
+
+	<Helmet name="REF_killer_helmet" inventoryBinding="Helmet"
+			tooltip="6B27 Helmet"
+			description="Executioner Helmet"
+			img="data/models/humans/attachments/REF_infantry_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2"/>
+		<ConcealmentModifier add="0" />
+    <RenderObject3D model="data/models/humans/attachments/REF_infantry_helmet.khm" diffuseTex="data/models/humans/attachments/REF_killer_helmet.dds" attachSlot="Bip001 Head">
+	    <Specular shininess="0" intensity="0"/>
+		</RenderObject3D>
+		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
+			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
+		</Params>
+	</Helmet>
+
+	<Helmet name="REF_special_helmet" inventoryBinding="Helmet"
+			tooltip="6B47 Helmet"
+			description="SOF helmet"
+			img="data/models/humans/attachments/REF_special_helmet_ui.dds"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1"/>
+		<ConcealmentModifier add="0" />
+    <RenderObject3D model="data/models/humans/attachments/REF_special_helmet.khm" diffuseTex="data/models/humans/attachments/REF_special_helmet.dds" attachSlot="Bip001 Head">
+	    <Specular shininess="0" intensity="0"/>
+		</RenderObject3D>
+		<Params protectionInfoText="@equipment_protect2">
+			<ProtectionArc degrees="360" coveragePercent="20" piercingProtectionLevel="4"/>
+		</Params>
+	</Helmet>
+
+  <Armor name="REF_basic_armor" inventoryBinding="Armor"
+		tooltip="6B45 Body Armor"
+		description="standard armor profile"
+		img="data/models/equipment/REF_basic_armor_ui.dds"
+	>
+	<MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-1"/>
+
+	<Params protectionInfoText="@equipment_protect2">
+		<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="5"/>
+		<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="4"/>
+		<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+	</Params>
+</Armor>
+
+<Armor name="REF_heavy_armor" inventoryBinding="Armor"
+		tooltip="6B43 Body Armor"
+		description="heavy front plate"
+		img="data/models/equipment/REF_heavy_armor_ui.dds"
+	>
+	<MobilityModifiers moveSpeedModifierPercent="-24" turnSpeedModifierPercent="-12"/>
+
+	<Params protectionInfoText="@equipment_protect2">
+		<ProtectionArc degrees="90" coveragePercent="65" piercingProtectionLevel="6"/>
+		<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="4"/>
+		<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+	</Params>
+</Armor>
+
+<Armor name="REF_light_armor" inventoryBinding="Armor"
+		tooltip="6B46 Plate Carrier"
+		description="no sides"
+		img="data/models/equipment/REF_light_armor_ui.dds"
+	>
+	<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="+1"/>
+
+	<Params protectionInfoText="@equipment_protect2">
+		<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="5"/>
+		<ProtectionArc degrees="270" coveragePercent="0" piercingProtectionLevel="0"/>
+		<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+	</Params>
+</Armor>
+
+</Equipment>
