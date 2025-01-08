@@ -12,7 +12,7 @@
       silenced="1">
     <Damage start="34" end="24" startDist="0" endDist="30"/>
     <CriticalChancePercent start="28" end="21" startDist="0" endDist="35"/>
-    <ArmorPenetration start="4" end="4" startDist="0" endDist="100"/>
+    <ArmorPenetration start="40" end="40" startDist="0" endDist="100"/>
   </Params>
 </Ammo>
 
@@ -28,7 +28,7 @@
       silenced="0">
     <Damage start="23" end="19" startDist="0" endDist="100"/>
     <CriticalChancePercent start="10" end="0" startDist="0" endDist="40"/>
-    <ArmorPenetration start="5" end="2" startDist="0" endDist="100"/>
+    <ArmorPenetration start="50" end="30" startDist="0" endDist="100"/>
   </Params>
 </Ammo>
 
@@ -44,7 +44,7 @@
       silenced="0">
     <Damage start="24" end="21" startDist="0" endDist="100"/>
     <CriticalChancePercent start="15" end="10" startDist="0" endDist="50"/>
-    <ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+    <ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
   </Params>
 </Ammo>
 
@@ -60,7 +60,7 @@
       silenced="0">
     <Damage start="21" end="18" startDist="0" endDist="100"/>
     <CriticalChancePercent start="12" end="10" startDist="0" endDist="20"/>
-    <ArmorPenetration start="5" end="5" startDist="0" endDist="100"/>
+    <ArmorPenetration start="50" end="50" startDist="0" endDist="100"/>
   </Params>
 </Ammo>
 
@@ -76,7 +76,7 @@
       silenced="1">
     <Damage start="36" end="24" startDist="0" endDist="30"/>
     <CriticalChancePercent start="20" end="15" startDist="0" endDist="35"/>
-    <ArmorPenetration start="4" end="3" startDist="0" endDist="20"/>
+    <ArmorPenetration start="40" end="30" startDist="0" endDist="20"/>
   </Params>
 </Ammo>
 
@@ -92,7 +92,7 @@
       silenced="0">
     <Damage start="50" end="40" startDist="0" endDist="100"/>
     <CriticalChancePercent start="20" end="30" startDist="10" endDist="20"/>
-    <ArmorPenetration start="6" end="5" startDist="0" endDist="30"/>
+    <ArmorPenetration start="60" end="50" startDist="0" endDist="30"/>
   </Params>
 </Ammo>
 
@@ -108,7 +108,7 @@
       silenced="0">
     <Damage start="30" end="26" startDist="0" endDist="100"/>
     <CriticalChancePercent start="15" end="14" startDist="20" endDist="30"/>
-    <ArmorPenetration start="5" end="4" startDist="0" endDist="100"/>
+    <ArmorPenetration start="50" end="40" startDist="0" endDist="100"/>
   </Params>
 </Ammo>
 
@@ -124,7 +124,7 @@
       silenced="0">
     <Damage start="21" end="19" startDist="0" endDist="45"/>
     <CriticalChancePercent start="10" end="5" startDist="0" endDist="30"/>
-    <ArmorPenetration start="5" end="4" startDist="0" endDist="10"/>
+    <ArmorPenetration start="50" end="40" startDist="0" endDist="10"/>
   </Params>
 </Ammo>
 
@@ -140,7 +140,7 @@
       silenced="1">
     <Damage start="21" end="19" startDist="0" endDist="45"/>
     <CriticalChancePercent start="10" end="5" startDist="0" endDist="30"/>
-    <ArmorPenetration start="5" end="4" startDist="0" endDist="10"/>
+    <ArmorPenetration start="50" end="40" startDist="0" endDist="10"/>
   </Params>
 </Ammo>
 
