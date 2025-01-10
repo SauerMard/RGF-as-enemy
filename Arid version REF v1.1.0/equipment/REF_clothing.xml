@@ -25,7 +25,7 @@
 		</RenderObject3D>
 
 		<Params protectionInfoText="@equipment_protect1">
-			<ProtectionArc degrees="360" coveragePercent="10" piercingProtectionLevel="4"/>
+			<ProtectionArc degrees="360" coveragePercent="10" piercingProtectionLevel="40"/>
 		</Params>
 	</Helmet>
 
@@ -52,7 +52,7 @@
 	    <Specular shininess="0" intensity="0"/>
 		</RenderObject3D>
 		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
-			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
+			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="40"/>
 		</Params>
 	</Helmet>
 
@@ -67,7 +67,7 @@
 	    <Specular shininess="0" intensity="0"/>
 		</RenderObject3D>
 		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
-			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="4"/>
+			<ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="40"/>
 		</Params>
 	</Helmet>
 
@@ -82,7 +82,7 @@
 	    <Specular shininess="0" intensity="0"/>
 		</RenderObject3D>
 		<Params protectionInfoText="@equipment_protect2">
-			<ProtectionArc degrees="360" coveragePercent="20" piercingProtectionLevel="4"/>
+			<ProtectionArc degrees="360" coveragePercent="20" piercingProtectionLevel="40"/>
 		</Params>
 	</Helmet>
 
@@ -94,9 +94,9 @@
 	<MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-1"/>
 
 	<Params protectionInfoText="@equipment_protect2">
-		<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="5"/>
-		<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="4"/>
-		<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+		<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="50"/>
+		<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="40"/>
+		<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="50"/>
 	</Params>
 </Armor>
 
@@ -108,9 +108,9 @@
 	<MobilityModifiers moveSpeedModifierPercent="-24" turnSpeedModifierPercent="-12"/>
 
 	<Params protectionInfoText="@equipment_protect2">
-		<ProtectionArc degrees="90" coveragePercent="65" piercingProtectionLevel="6"/>
-		<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="4"/>
-		<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+		<ProtectionArc degrees="90" coveragePercent="65" piercingProtectionLevel="60"/>
+		<ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="40"/>
+		<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="50"/>
 	</Params>
 </Armor>
 
@@ -122,9 +122,9 @@
 	<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="+1"/>
 
 	<Params protectionInfoText="@equipment_protect2">
-		<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="5"/>
-		<ProtectionArc degrees="270" coveragePercent="0" piercingProtectionLevel="0"/>
-		<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="5"/>
+		<ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="50"/>
+		<ProtectionArc degrees="270" coveragePercent="0" piercingProtectionLevel="00"/>
+		<ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="50"/>
 	</Params>
 </Armor>
 
