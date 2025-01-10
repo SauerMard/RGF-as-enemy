@@ -3,7 +3,7 @@
 <!--  Rifles -->
 
 <Bind eqp="AK74_Infantry_RGF_OPFOR">
-  <to name="545x39_FMJ_7N10_RGF"/>
+  <to name="REF_5.45x39_7n10_LB"/>
 </Bind>
 <Firearm name="AK74_Infantry_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
     tooltip="AK-74M (30 rds)"
@@ -72,7 +72,7 @@
 </Firearm>
 
 <Bind eqp="AK74MR_RGF_OPFOR">
-  <to name="545x39_FMJ_7N10_RGF"/>
+  <to name="REF_5.45x39_7n10_LB"/>
   <to name="Kobra_RGF_OPFOR"/>
 </Bind>
 <Firearm name="AK74MR_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
@@ -144,7 +144,7 @@
 </Firearm>
 
 <Bind eqp="SVDM_RGF_OPFOR">
-  <to name="762R7N1_SVDRGF"/>
+  <to name="REF_7.62x54R_7N1"/>
   <to name="PSO39_RG_OPFORF"/>
 </Bind>
 <Firearm name="SVDM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost=""
@@ -213,7 +213,7 @@
 </Firearm>
 
 <Bind eqp="OPFOR_mosin">
-		<to name="762R57N323_PKMRGF"/> <!-- probably temporary? -->
+		<to name="REF_7.62x54_57-N-323"/> <!-- probably temporary? -->
 	</Bind>
 	<Firearm name="OPFOR_mosin" inventoryBinding="PrimaryWeapon" category="rifle"
 			tooltip="Mosin-Nagant (5 rds)"
@@ -281,7 +281,7 @@
 <!-- Carbines n SMGs -->
 
 <Bind eqp="AK_105_OPFOR">
-	  <to name="545x39_FMJ_7N10_SB_RGF"/>
+	  <to name="REF_5.45x39_7n10_SB"/>
     <to name="holosight_OPFOR"/>
 	</Bind>
 	<Firearm name="AK_105_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
@@ -351,7 +351,7 @@
   </Firearm>
 
   <Bind eqp="AK-105_GRU_HOLO_OPFOR">
-		<to name="545x39_FMJ_7N22_SD_RGF"/>
+		<to name="REF_5.45x39_7N22_SD_SB"/>
     <to name="holosight_OPFOR"/>
 	</Bind>
 	<Firearm name="AK-105_GRU_HOLO_OPFOR" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
@@ -422,7 +422,7 @@
 	</Firearm>
 
 <Bind eqp="AK-105_GRU_6X_OPFOR">
-		<to name="545x39_FMJ_7N22_SD_RGF"/>
+		<to name="REF_5.45x39_7N22_SD_SB"/>
     <to name="LPVO_6X_OPFOR"/>
 	</Bind>
 	<Firearm name="AK-105_GRU_6X_OPFOR" inventoryBinding="PrimaryWeaponMuzzle" category="rifle" unlockCost="2"
@@ -493,7 +493,7 @@
 	</Firearm>
 
 <Bind eqp="AKS74U_RGF_OPFOR">
-  <to name="545x39_FMJ_7N10_SB_RGF"/>
+  <to name="REF_5.45x39_7n10_SB"/>
 </Bind>
 <Firearm name="AKS74U_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="2"
     tooltip="AKS-74U (30 rds)"
@@ -561,7 +561,7 @@
 </Firearm>
 
 <Bind eqp="ASM_RGF_PSO_OPFOR">
-  <to name="9x39_7N8ASM_RGF"/>
+  <to name="REF_9x39_7N8"/>
   <to name="PSO1M2_RGF_OPFOR"/>
 </Bind>
 <Firearm name="ASM_RGF_PSO_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
@@ -630,7 +630,7 @@
 </Firearm>
 
 <Bind eqp="ASM_RGF_KOBRA_OPFOR">
-  <to name="9x39_7N8ASM_RGF"/>
+  <to name="REF_9x39_7N8"/>
   <to name="Kobra_RGF_OPFOR"/>
 </Bind>
 <Firearm name="ASM_RGF_KOBRA_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="6"
@@ -699,7 +699,7 @@
 </Firearm>
 
 <Bind eqp="Vityaz_OPFOR">
-  <to name="9x19_7N21_RGF"/>
+  <to name="REF_9x19_7N21"/>
 </Bind>
 <Firearm name="Vityaz_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
     tooltip="PP-19-01 (30 rds)"
@@ -838,7 +838,7 @@
 <!-- MGs -->
 
 <Bind eqp="RPK_RGF_OPFOR">
-  <to name="762x39_FMJ_231_RGF"/>
+  <to name="REF_7.62x39_57-N-231"/>
 </Bind>
 <Firearm name="RPK_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
     tooltip="RPK (75 rds)"
@@ -912,7 +912,7 @@
 </Firearm>
 
 <Bind eqp="RPK74_RGF_OPFOR">
-  <to name="545x39_FMJ_7N10_RGF"/>
+  <to name="REF_5.45x39_7n10_LB"/>
 </Bind>
 <Firearm name="RPK74_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
     tooltip="RPK-74M (45 rds)"
@@ -985,7 +985,7 @@
 </Firearm>
 
 <Bind eqp="RPK74_DRUM_RGF_OPFOR">
-  <to name="545x39_FMJ_7N10_RGF"/>
+  <to name="REF_5.45x39_7n10_LB"/>
   <to name="PKAS_RGF_OPFOR"/>
 </Bind>
 <Firearm name="RPK74_DRUM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="3"
@@ -1059,7 +1059,7 @@
 </Firearm>
 
 <Bind eqp="PKM_RGF_OPFOR">
-  <to name="762R57N323_PKMRGF"/>
+  <to name="REF_7.62x54_57-N-323"/>
 </Bind>
 <Firearm name="PKM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
     tooltip="PKM (100 rds)"
@@ -1133,7 +1133,7 @@
 <!-- Pistols -->
 
 <Bind eqp="MP443_RGF_OPFOR">
-  <to name="9x19_7N21_RGF"/>
+  <to name="REF_9x19_7N21"/>
 </Bind>
 <Firearm name="MP443_RGF_OPFOR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="3"
     tooltip="MP-443 (17 rds)"
@@ -1201,7 +1201,7 @@
 </Firearm>
 
 <Bind eqp="Makarov_RGF_OPFOR">
-  <to name="9x18_57N181_RGF"/>
+  <to name="REF_9x18_57-N-181"/>
 </Bind>
 <Firearm name="Makarov_RGF_OPFOR" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="0"
     tooltip="PM (8 rds)"
@@ -1269,7 +1269,7 @@
 </Firearm>
 
 <Bind eqp="AKM_RGF_OPFOR">
-  <to name="762x39_FMJ_231_RGF"/>
+  <to name="REF_7.62x39_57-N-231"/>
 </Bind>
 <Firearm name="AKM_RGF_OPFOR" inventoryBinding="PrimaryWeapon" category="rifle"
     tooltip="AKM (30 rds)"
