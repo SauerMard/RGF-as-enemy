@@ -1,3 +1,10 @@
+
+<!--  
+
+
+
+
+
 <Equipment>
 
 <Bind eqp="REF_infantry_ak74m">
@@ -58,7 +65,7 @@
     <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -126,7 +133,7 @@
     <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -195,7 +202,7 @@
     <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -264,7 +271,7 @@
     <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -337,7 +344,7 @@
     <Flare particles="FX_MUZZLE_FLASH_LMG_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds>
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -410,7 +417,7 @@
     <Flare particles="FX_MUZZLE_FLASH_LMG_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -484,7 +491,7 @@
     <Flare particles="FX_MUZZLE_FLASH_LMG_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds>
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -556,7 +563,7 @@
     <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -626,7 +633,7 @@
     <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds>
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -638,7 +645,7 @@
 </Firearm>
 
 <Bind eqp="OPFOR_mosin">
-		<to name="REF_7.62x54_57-N-323"/> <!-- probably temporary? -->
+		<to name="REF_7.62x54_57-N-323"/>
 	</Bind>
 	<Firearm name="OPFOR_mosin" inventoryBinding="PrimaryWeapon" category="rifle"
 			tooltip="Mosin-Nagant (5 rds)"
@@ -692,7 +699,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
 		</MuzzleFlash>
 
-		<Sounds> <!-- max 4 variants for each action -->
+		<Sounds> 
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -703,7 +710,6 @@
 		</Sounds>
 	</Firearm>
 
-<!-- Carbines n SMGs -->
 
 <Bind eqp="AK_105_OPFOR">
 	  <to name="REF_5.45x39_7n10_SB"/>
@@ -764,7 +770,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
 		</MuzzleFlash>
 
-		<Sounds> <!-- max 4 variants for each action -->
+		<Sounds> 
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -835,7 +841,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
 		</MuzzleFlash>
 
-		<Sounds> <!-- max 4 variants for each action -->
+		<Sounds>
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -906,7 +912,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
 		</MuzzleFlash>
 
-		<Sounds> <!-- max 4 variants for each action -->
+		<Sounds> 
 			<Equip name="rifle_eqp"/>
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
@@ -975,7 +981,7 @@
     <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -1043,7 +1049,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
 			<Equip name="smg_eqp"/>
 			<Unequip name="smg_neqp"/>
 			<Reload name="smg_reld"/>
@@ -1112,7 +1118,7 @@
 			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
 			<Equip name="smg_eqp"/>
 			<Unequip name="smg_neqp"/>
 			<Reload name="smg_reld"/>
@@ -1123,7 +1129,7 @@
 		</Sounds>
 </Firearm>
 
-<!-- MGs -->
+
 
 <Bind eqp="RPK_RGF_OPFOR">
   <to name="REF_7.62x39_57-N-231"/>
@@ -1188,7 +1194,7 @@
     <Flare particles="FX_MUZZLE_FLASH_LMG_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
     <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
@@ -1199,7 +1205,7 @@
   </Sounds>
 </Firearm>
 
-<!-- Pistols -->
+
 
 <Bind eqp="MP443_RGF_OPFOR">
   <to name="REF_9x19_7N21"/>
@@ -1258,7 +1264,7 @@
     <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
   </MuzzleFlash>
 
-  <Sounds> <!-- max 4 variants for each action -->
+  <Sounds> 
     <Equip name="pistol_eqp"/>
     <Unequip name="pistol_neqp"/>
     <Reload name="pistol_reld"/>
@@ -1324,10 +1330,10 @@
     <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
     <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
     <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
-  </MuzzleFlash>
+  </MuzzleFlash> -->
 
-  <Sounds> <!-- max 4 variants for each action -->
-    <Equip name="pistol_eqp"/>
+  <!-- <Sounds> <!-- max 4 variants for each action -->
+   <!--  <Equip name="pistol_eqp"/>
     <Unequip name="pistol_neqp"/>
     <Reload name="pistol_reld"/>
     <ReloadEmpty name="pistol_reldempt"/>
@@ -1335,9 +1341,9 @@
     <ShellDrop name="pistol_shell_drop"/>
     <Empty name="gen_empty"/>
   </Sounds>
-</Firearm>
+</Firearm> -->
 
-<Bind eqp="REF_akm">
+<!-- <Bind eqp="REF_akm">
   <to name="REF_7.62x39_57-N-231"/>
 </Bind>
 <Firearm name="REF_akm" inventoryBinding="PrimaryWeapon" category="rifle"
@@ -1394,7 +1400,7 @@
   </MuzzleFlash>
 
   <Sounds> <!-- max 4 variants for each action -->
-    <Equip name="rifle_eqp"/>
+   <!-- <Equip name="rifle_eqp"/>
     <Unequip name="rifle_neqp"/>
     <Reload name="rifle_reld"/>
     <ReloadEmpty name="rifle_reldempt"/>
@@ -1402,6 +1408,6 @@
     <ShellDrop name="rifle_shell_drop"/>
     <Empty name="gen_empty"/>
   </Sounds>
-</Firearm>
+</Firearm> -->
 
-</Equipment>
+<!-- </Equipment> -->
