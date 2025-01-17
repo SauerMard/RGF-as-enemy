@@ -37,7 +37,7 @@
 		<ConcealmentModifier add="0" />
         <RenderObject3D model="data/models/humans/attachments/VKBO_cap.khm" diffuseTex="data/models/humans/attachments/VKBO_cap.dds" attachSlot="Bip001 Head"/>
 		<Params protectionInfoText="@equipment_protect2" allowNVG="false">
-			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="1"/>
+			<ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="10"/>
 		</Params>
 	</Helmet>
 
