@@ -1,71 +1,14 @@
 <FirearmAttackTypes>
 
-  <AttackType name="RGF_MagDump">
-    <ModifiableParams
-      minAimTime="300"
-      maxAimTime="300"
-      minShots="3"
-      maxShots="-1"
-      resetTime="400"
-      accuracyAdd="-100"
-      followupShotAccuracyAdd="-25"
-      critChanceAdd="-20"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_CloseAutoFire">
-    <ModifiableParams
-      minAimTime="350"
-      maxAimTime="400"
-      minShots="2"
-      maxShots="6"
-      resetTime="300"
-      accuracyAdd="-100"
-      followupShotAccuracyAdd="-5"
-      critChanceAdd="-5"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_MidAutoFire">
-    <ModifiableParams
-      minAimTime="400"
-      maxAimTime="600"
-      minShots="2"
-      maxShots="6"
-      resetTime="400"
-      accuracyAdd="-120"
-      followupShotAccuracyAdd="-10"
-      critChanceAdd="-5"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_AimedSemi">
-    <ModifiableParams
-      minAimTime="600"
-      maxAimTime="900"
-      roundsPerSecondOverride="6"
-      minShots="1"
-      maxShots="3"
-      resetTime="200"
-      accuracyAdd="-100"
-      followupShotAccuracyAdd="5"
-      critChanceAdd="10"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_UltralongXX">
-    <ModifiableParams
-      minAimTime="900"
-      maxAimTime="900"
-      roundsPerSecondOverride="2"
-      minShots="1"
-      maxShots="1"
-      resetTime="200"
-      accuracyAdd="-150"
-      followupShotAccuracyAdd="20"
-      critChanceAdd="-20"
-    />
-  </AttackType>
+
+
+
+
+
 
   <AttackType name="RGF_LMG_Longwalk">
     <ModifiableParams
@@ -184,174 +127,24 @@
     />
   </AttackType>
 
-  <AttackType name="RGF_DMR_Fast_Old">
-    <ModifiableParams
-      minAimTime="600"
-      maxAimTime="600"
-      minShots="1"
-      maxShots="3"
-      resetTime="400"
 
-      accuracyAdd="-20"
-      followupShotAccuracyAdd="10"
 
-      critChanceAdd="-30"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_DMR_Fast">
-    <ModifiableParams
-      minAimTime="550"
-      maxAimTime="550"
-      roundsPerSecondOverride="5"
-      minShots="1"
-      maxShots="-1"
-      resetTime="400"
 
-      accuracyAdd="-20"
-      followupShotAccuracyAdd="20"
 
-      critChanceAdd="-30"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_DMR_Aimed">
-    <ModifiableParams
-      minAimTime="650"
-      maxAimTime="800"
-      roundsPerSecondOverride="2"
-      minShots="1"
-      maxShots="1"
-      resetTime="200"
-      accuracyAdd="0"
-      followupShotAccuracyAdd="20"
-      critChanceAdd="30"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_DMR_AimedXX">
-    <ModifiableParams
-      minAimTime="800"
-      maxAimTime="800"
-      roundsPerSecondOverride="1"
-      minShots="1"
-      maxShots="1"
-      resetTime="200"
-      accuracyAdd="-50"
-      followupShotAccuracyAdd="10"
-      critChanceAdd="0"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_DMR_Fast_Mounted">
-    <ModifiableParams
-      minAimTime="500"
-      maxAimTime="400"
-      roundsPerSecondOverride="5"
-      minShots="1"
-      maxShots="4"
-      resetTime="100"
-      accuracyAdd="0"
-      followupShotAccuracyAdd="10"
-      critChanceAdd="0"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_DMR_Aimed_Mounted">
-    <ModifiableParams
-      minAimTime="400"
-      maxAimTime="600"
-      roundsPerSecondOverride="2"
-      minShots="1"
-      maxShots="1"
-      resetTime="0"
-      accuracyAdd="0"
-      followupShotAccuracyAdd="20"
-      critChanceAdd="35"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_DMR_AimedXX_Mounted">
-    <ModifiableParams
-      minAimTime="600"
-      maxAimTime="700"
-      roundsPerSecondOverride="1"
-      minShots="1"
-      maxShots="1"
-      resetTime="100"
-      accuracyAdd="-40"
-      followupShotAccuracyAdd="10"
-      critChanceAdd="0"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_PistolRapid">
-    <ModifiableParams
-      minAimTime="200"
-      maxAimTime="450"
-      roundsPerSecondOverride="7"
-      minShots="1"
-      maxShots="5"
-      resetTime="300"
-      accuracyAdd="-15"
-      followupShotAccuracyAdd="0"
-      critChanceAdd="0"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_PistolAimed">
-    <ModifiableParams
-      minAimTime="450"
-      maxAimTime="900"
-      roundsPerSecondOverride="2"
-      minShots="1"
-      maxShots="3"
-      resetTime="350"
-      accuracyAdd="10"
-      followupShotAccuracyAdd="-5"
-      critChanceAdd="0"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_PistolLong">
-    <ModifiableParams
-      minAimTime="900"
-      maxAimTime="1100"
-      roundsPerSecondOverride="1"
-      minShots="1"
-      maxShots="1"
-      resetTime="175"
-      accuracyAdd="-30"
-      followupShotAccuracyAdd="5"
-      critChanceAdd="-10"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_PistolXX">
-    <ModifiableParams
-      minAimTime="1100"
-      maxAimTime="1500"
-      roundsPerSecondOverride="1"
-      minShots="1"
-      maxShots="1"
-      resetTime="175"
-      accuracyAdd="-50"
-      followupShotAccuracyAdd="2"
-      critChanceAdd="-20"
-    />
-  </AttackType>
 
-  <AttackType name="RGF_SMGAuto">
-    <ModifiableParams
-      minAimTime="350"
-      maxAimTime="350"
-      minShots="3"
-      maxShots="9"
-      resetTime="200"
-      accuracyAdd="0"
-      followupShotAccuracyAdd="-2"
-      critChanceAdd="-8"
-    />
-  </AttackType>
+
+
+
+
 
 </FirearmAttackTypes>
