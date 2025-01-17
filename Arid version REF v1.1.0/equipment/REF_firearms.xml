@@ -947,7 +947,7 @@
 
 
     <Bind eqp="REF_Vityaz_SD">
-      <to name="9x19_7N21SD_RGF"/>
+      <to name="REF_9x19_7N21_SD"/>
     </Bind>
     <Firearm name="REF_Vityaz_SD" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
         tooltip="PP-19-01 Supp. (30 rds)"
