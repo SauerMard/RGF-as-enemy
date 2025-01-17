@@ -457,8 +457,8 @@
                 <Item name="Kobra_RGF_OPFOR"/>
                 <Item name="REF_MP443"/>
                 <Item name="RGF_RGD_OPFOR"/>
-                <Item name="helmet_6B47_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_special_helmet"/>
+                <Item name="REF_light_armor"/>
             </Equipment>
         </Human>
     </Entity>
@@ -483,8 +483,8 @@
                 <Item name="Kobra_RGF_OPFOR"/>
                 <Item name="REF_MP443"/>
                 <Item name="RGF_RGD_OPFOR"/>
-                <Item name="helmet_6B47_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_special_helmet"/>
+                <Item name="REF_light_armor"/>
             </Equipment>
         </Human>
     </Entity>
@@ -510,8 +510,8 @@
 				<Item name="REF_AK74MR"/>
         <Item name="Kobra_RGF_OPFOR"/>
         <Item name="REF_MP443"/>
-        <Item name="helmet_6B47_OPFOR"/>
-        <Item name="armor_6B43_OPFOR"/>
+        <Item name="REF_special_helmet"/>
+        <Item name="REF_heavy_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -536,7 +536,7 @@
 				<Item name="REF_infantry_aks74u"/>
                 <Item name="REF_MP443"/>
                 <Item name="CapBodyguard"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -560,7 +560,7 @@
 			<Equipment>
                 <Item name="REF_MP443"/>
                 <Item name="CapBodyguard"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -584,7 +584,7 @@
 			<Equipment>
                 <Item name="REF_Vityaz"/>
                 <Item name="CapBodyguard"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -633,7 +633,7 @@
                 <Item name="holosight_OPFOR"/>
                 <Item name="REF_MP443"/>
                 <Item name="CapBodyguard"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -659,7 +659,7 @@
                 <Item name="holosight_OPFOR"/>
                 <Item name="REF_MP443"/>
                 <Item name="FAST_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -685,7 +685,7 @@
                 <Item name="PKAS_RGF_OPFOR"/>
                 <Item name="REF_MP443"/>
                 <Item name="FAST_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -738,7 +738,7 @@
                 <Item name="LPVO_6X_OPFOR"/>
                 <Item name="REF_MP443"/>
                 <Item name="FAST_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -765,7 +765,7 @@
                 <Item name="holosight_OPFOR"/>
                 <Item name="REF_MP443"/>
                 <Item name="FAST_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -791,7 +791,7 @@
 				<Item name="REF_infantry_ak74m"/>
                 <Item name="REF_MP443"/>
                 <Item name="CapBodyguard"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -818,7 +818,7 @@
                 <Item name="Kobra_RGF_OPFOR"/>
                 <Item name="REF_MP443"/>
                 <Item name="FAST_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -844,7 +844,7 @@
 				<Item name="REF_Vityaz_SD"/>
                 <Item name="REF_MP443"/>
                 <Item name="CapBodyguard"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -869,7 +869,7 @@
 				<TurnSpeed min="6" defaultMetersPerSec="10" max="20"/>
 			</Mobility>
 			<Equipment>
-                <Item name="armor_6B43_OPFOR"/>
+                <Item name="REF_heavy_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -893,7 +893,7 @@
 
 			<Equipment>
                 <Item name="CapBodyguard"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -917,7 +917,7 @@
 
 			<Equipment>
                 <Item name="FAST_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -941,7 +941,7 @@
 
 			<Equipment>
                  <Item name="CapBodyguard"/>
-                 <Item name="armor_6B46_OPFOR"/>
+                 <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -964,7 +964,7 @@
 
 			<Equipment>
                 <Item name="FAST_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -987,7 +987,7 @@
 
 			<Equipment>
                 <Item name="CapBodyguard"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_light_armor"/>
 			</Equipment>
 		</Human>
 	</Entity>
@@ -1008,8 +1008,8 @@
             </Mobility>
 
             <Equipment>
-                <Item name="helmet_6B47_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_special_helmet"/>
+                <Item name="REF_light_armor"/>
             </Equipment>
         </Human>
     </Entity>
@@ -1031,7 +1031,7 @@
             </Mobility>
 
             <Equipment>
-                <Item name="helmet_6B27_OPFOR"/>
+                <Item name="REF_infantry_helmet"/>
             </Equipment>
         </Human>
     </Entity>
@@ -1053,7 +1053,7 @@
             </Mobility>
 
             <Equipment>
-                <Item name="helmet_6B27_OPFOR"/>
+                <Item name="REF_infantry_helmet"/>
             </Equipment>
         </Human>
     </Entity>
@@ -1075,8 +1075,8 @@
             </Mobility>
 
             <Equipment>
-                <Item name="helmet_6B27_OPFOR"/>
-                <Item name="armor_6B45_OPFOR"/>
+                <Item name="REF_infantry_helmet"/>
+                <Item name="REF_basic_armor"/>
             </Equipment>
         </Human>
     </Entity>
@@ -1098,8 +1098,8 @@
             </Mobility>
 
             <Equipment>
-                <Item name="helmet_6B27_OPFOR"/>
-                <Item name="armor_6B45_OPFOR"/>
+                <Item name="REF_infantry_helmet"/>
+                <Item name="REF_basic_armor"/>
             </Equipment>
         </Human>
     </Entity>
@@ -1165,7 +1165,7 @@
             </Mobility>
 
             <Equipment>
-                <Item name="helmet_6B27_OPFOR"/>
+                <Item name="REF_infantry_helmet"/>
             </Equipment>
         </Human>
     </Entity>
@@ -1187,8 +1187,8 @@
             </Mobility>
 
             <Equipment>
-                <Item name="helmet_6B27_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_infantry_helmet"/>
+                <Item name="REF_light_armor"/>
             </Equipment>
         </Human>
     </Entity>
@@ -1209,8 +1209,8 @@
             </Mobility>
 
             <Equipment>
-                <Item name="helmet_6B47_OPFOR"/>
-                <Item name="armor_6B46_OPFOR"/>
+                <Item name="REF_special_helmet"/>
+                <Item name="REF_light_armor"/>
             </Equipment>
         </Human>
     </Entity>
