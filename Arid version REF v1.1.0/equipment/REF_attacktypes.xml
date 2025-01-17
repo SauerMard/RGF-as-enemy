@@ -292,20 +292,7 @@
     />
   </AttackType>
 
-  <AttackType name="RGF_DMR_Fast_Old">
-    <ModifiableParams
-      minAimTime="600"
-      maxAimTime="600"
-      minShots="1"
-      maxShots="3"
-      resetTime="400"
 
-      accuracyAdd="-20"
-      followupShotAccuracyAdd="10"
-
-      critChanceAdd="-30"
-    />
-  </AttackType>
 
   <AttackType name="RGF_DMR_Fast">
     <ModifiableParams
