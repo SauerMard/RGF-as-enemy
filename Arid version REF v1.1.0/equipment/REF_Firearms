@@ -264,10 +264,10 @@
     />
 
     <AttackTypes>
-      <AttackType name="RGF_CloseAutoFire" rangeMeters="12"/>
-      <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
-      <AttackType name="RGF_AimedSemi" rangeMeters="60"/>
-      <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+      <AttackType name="REF_CloseAutoFire" rangeMeters="12"/>
+      <AttackType name="REF_MidAutoFire" rangeMeters="18"/>
+      <AttackType name="REF_AimedSemi" rangeMeters="60"/>
+      <AttackType name="REF_UltralongXX" rangeMeters="9999"/>
     </AttackTypes>
 
     <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
@@ -479,10 +479,10 @@
     />
 
     <AttackTypes>
-      <AttackType name="RGF_CloseAutoFire" rangeMeters="8"/>
-      <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
-      <AttackType name="RGF_AimedSemi" rangeMeters="35"/>
-      <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+      <AttackType name="REF_CloseAutoFire" rangeMeters="8"/>
+      <AttackType name="REF_MidAutoFire" rangeMeters="18"/>
+      <AttackType name="REF_AimedSemi" rangeMeters="35"/>
+      <AttackType name="REF_UltralongXX" rangeMeters="9999"/>
     </AttackTypes>
 
     <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
@@ -702,10 +702,10 @@
    		/>
 
    		<AttackTypes>
-   			<AttackType name="RGF_CloseAutoFire" rangeMeters="10"/>
-         <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
-         <AttackType name="RGF_AimedSemi" rangeMeters="50"/>
-         <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+   			<AttackType name="REF_CloseAutoFire" rangeMeters="10"/>
+         <AttackType name="REF_MidAutoFire" rangeMeters="18"/>
+         <AttackType name="REF_AimedSemi" rangeMeters="50"/>
+         <AttackType name="REF_UltralongXX" rangeMeters="9999"/>
    		</AttackTypes>
 
    		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
@@ -775,10 +775,10 @@
    		/>
 
    		<AttackTypes>
-   			<AttackType name="RGF_CloseAutoFire" rangeMeters="10"/>
-         <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
-         <AttackType name="RGF_AimedSemi" rangeMeters="50"/>
-         <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+   			<AttackType name="REF_CloseAutoFire" rangeMeters="10"/>
+         <AttackType name="REF_MidAutoFire" rangeMeters="18"/>
+         <AttackType name="REF_AimedSemi" rangeMeters="50"/>
+         <AttackType name="REF_UltralongXX" rangeMeters="9999"/>
    		</AttackTypes>
 
    		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
@@ -848,10 +848,10 @@
     		/>
 
     		<AttackTypes>
-    			<AttackType name="RGF_CloseAutoFire" rangeMeters="10"/>
-          <AttackType name="RGF_MidAutoFire" rangeMeters="18"/>
-          <AttackType name="RGF_AimedSemi" rangeMeters="50"/>
-          <AttackType name="RGF_UltralongXX" rangeMeters="9999"/>
+    			<AttackType name="REF_CloseAutoFire" rangeMeters="10"/>
+          <AttackType name="REF_MidAutoFire" rangeMeters="18"/>
+          <AttackType name="REF_AimedSemi" rangeMeters="50"/>
+          <AttackType name="REF_UltralongXX" rangeMeters="9999"/>
     		</AttackTypes>
 
     		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
@@ -920,9 +920,9 @@
       />
 
       <AttackTypes>
-        <AttackType name="RGF_CloseAutoFire" rangeMeters="6"/>
-        <AttackType name="RGF_MidAutoFire" rangeMeters="10"/>
-        <AttackType name="RGF_AimedSemi" rangeMeters="35"/>
+        <AttackType name="REF_CloseAutoFire" rangeMeters="6"/>
+        <AttackType name="REF_MidAutoFire" rangeMeters="10"/>
+        <AttackType name="REF_AimedSemi" rangeMeters="35"/>
         <AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
       </AttackTypes>
 
@@ -991,9 +991,9 @@
       />
 
       <AttackTypes>
-        <AttackType name="RGF_CloseAutoFire" rangeMeters="6"/>
-        <AttackType name="RGF_MidAutoFire" rangeMeters="10"/>
-        <AttackType name="RGF_AimedSemi" rangeMeters="35"/>
+        <AttackType name="REF_CloseAutoFire" rangeMeters="6"/>
+        <AttackType name="REF_MidAutoFire" rangeMeters="10"/>
+        <AttackType name="REF_AimedSemi" rangeMeters="35"/>
         <AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
       </AttackTypes>
 
@@ -1542,4 +1542,3 @@
       <Empty name="gen_empty"/>
     </Sounds>
   </Firearm>
-
