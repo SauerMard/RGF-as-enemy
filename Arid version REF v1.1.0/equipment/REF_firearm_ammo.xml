@@ -152,7 +152,7 @@
   </Params>
 </Ammo>
 
-</Equipment>
+
 
 <!-- 9x18 -->
 
@@ -171,3 +171,4 @@
     <ArmorPenetration start="30" end="20" startDist="0" endDist="100"/>
   </Params>
 </Ammo>
+</Equipment>
